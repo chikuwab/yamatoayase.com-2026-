@@ -1,0 +1,246 @@
+@charset "utf-8";
+@use "sass:math";
+
+@mixin icomoon() {
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@mixin font-smoothing($on) {
+  @if $on == 1 {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+@mixin placeholder($color) {
+  &::placeholder {
+    color: $color;
+  }
+  // IE
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  // Edge
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+}
+@mixin hide_text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+@mixin max-screen_h($break-point) {
+  @media screen and (max-height: $break-point) {
+    @content;
+  }
+}
+
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+@mixin min-screen_h($break-point) {
+  @media screen and (min-height: $break-point) {
+    @content;
+  }
+}
+
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+//px→vwの計算
+@function vw($number, $base: 750) {
+  $value: $number;
+  $value: ($number / $base) * 100vw;
+  @return $value;
+}
+
+// 第一引数で基準となる画面幅のフォントサイズ、第二引数で基準となる画面幅を入力
+@function get_vw($size, $viewport) {
+  $rate: math.div(100, $viewport);
+  @return ($rate * $size) * 1vw;
+}
+@function get_vw_max($size, $min, $viewport) {
+  $rate: math.div(100, $viewport);
+  @return unquote("max(" + $min * 1px + ", " + $rate * $size * 1vw + ")");
+}
+@mixin mgt_vw($px, $viewport: 749) {
+  margin-top: $px * 1px;
+  @media screen and (max-width: $viewport + 1px) {
+    margin-top: vw($px, $viewport);
+  }
+}
+@mixin mgb_vw($px, $viewport: 749) {
+  margin-bottom: $px * 1px;
+  @media screen and (max-width: $viewport + 1px) {
+    margin-bottom: vw($px, $viewport);
+  }
+}
+@mixin pdt_vw($px, $viewport: 749) {
+  padding-top: $px * 1px;
+  @media screen and (max-width: $viewport + 1px) {
+    padding-top: vw($px, $viewport);
+  }
+}
+@mixin pdb_vw($px, $viewport: 749) {
+  padding-bottom: $px * 1px;
+  @media screen and (max-width: $viewport + 1px) {
+    padding-bottom: vw($px, $viewport);
+  }
+}
+
+@mixin fz_vw_sp($font_size: 10, $viewport: $design-base-width-sp) {
+  // font-size: $font_size * 1px;
+  $vw: get_vw($font_size, $viewport);
+  font-size: unquote("min(" + $font_size * 0.1rem + ", " + $vw + ")");
+}
+@mixin fz_vw($font_size: 10, $viewport: $design-base-width) {
+  // font-size: $font_size * 1px;
+  $vw: get_vw($font_size, $viewport);
+  font-size: unquote("min(" + $font_size * 0.1rem + ", " + $vw + ")");
+}
+
+// @mixin fz_vw_sp($font_min, $font_vw, $font_max, $viewport: $design-base-width-sp) {
+//   font-size: $font_vw * 1px;
+//   font-size: clamp($font_min * 1px, get_vw($font_vw, $viewport), $font_max * 1px);
+// }
+// @mixin fz_vw($font_min, $font_vw, $font_max, $viewport: $design-base-width) {
+//   font-size: $font_vw * 1px;
+//   font-size: clamp($font_min * 1px, get_vw($font_vw, $viewport), $font_max * 1px);
+// }
+
+@mixin font_size($font_size) {
+  font-size: $font_size * 0.1rem;
+}
+
+@mixin inner {
+  max-width: calc(var(--width-contents));
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--margin-side);
+  padding-right: var(--margin-side);
+}
+
+@mixin fit_sp {
+  margin-left: calc(-1 * var(--margin-side));
+  margin-right: calc(-1 * var(--margin-side));
+}
+@mixin tbl1 {
+  width: 100%;
+  border-top: 1px solid #d0d0d0;
+  th,
+  td {
+    vertical-align: top;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 20px 25px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+}
+@mixin ul1 {
+  margin-left: 1.3em;
+  li {
+    margin-top: 0.3em;
+    list-style: disc outside;
+  }
+  &:first-child {
+    li:first-child {
+      margin-top: 0;
+    }
+  }
+}
+@mixin ol1 {
+  margin-left: 1.3em;
+  li {
+    margin-top: 0.3em;
+    list-style: decimal outside;
+  }
+  &:first-child {
+    li:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+// lineHeightCrop（line-heightの不要な余白を打ち消す）のmixinのコード例。
+@mixin line_height_crop($line-height) {
+  &::before {
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top: calc((1 - #{$line-height}) * 0.5em);
+    content: "";
+  }
+  &::after {
+    display: block;
+    width: 0;
+    height: 0;
+    margin-bottom: calc((1 - #{$line-height}) * 0.5em);
+    content: "";
+  }
+}
+
+@mixin icon-_base {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+}
+// 09__疑似要素初期化
+// ----------------------------------------------------------
+@mixin icon-ini {
+  content: "";
+  display: inline-block;
+}
+
+// 07__くの字矢印
+// ----------------------------------------------------------
+@mixin arrow($width, $bold, $color, $deg) {
+  @include icon-ini;
+
+  border-color: $color;
+  border-style: solid;
+  border-width: 0 #{$bold}px #{$bold}px 0;
+  height: #{$width}px;
+  vertical-align: middle;
+  width: #{$width}px;
+  //角度
+  @if ($deg == "left") {
+    transform: rotate(135deg);
+  } @else if ($deg == "top") {
+    transform: rotate(225deg);
+  } @else if ($deg == "right") {
+    transform: rotate(-45deg);
+  } @else if ($deg == "bottom") {
+    transform: rotate(45deg);
+  }
+}

@@ -1,0 +1,26 @@
+.p-nav-anchor {
+  text-align: center;
+  &__item {
+    @include mq_medium_max {
+      @include fz_vw_sp(16);
+    }
+    &:not(:first-child) {
+      margin-left: 16px;
+    }
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding-left: 24px;
+    transition: 0.2s;
+    &:hover {
+      color: var(--green-dark);
+    }
+    &::after {
+      position: absolute;
+      top: calc(50% + 2px);
+      left: 0;
+      transform: translateY(-50%);
+      @include aicon-down-open-big;
+    }
+  }
+}

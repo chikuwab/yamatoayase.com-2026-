@@ -1,0 +1,32 @@
+.u-inner {
+  @include inner;
+  &-wide {
+    @include inner;
+    @include mq_medium {
+      max-width: calc(var(--width-contents-wide) + var(--margin-side) * 2);
+    }
+  }
+  &-full {
+    padding-left: var(--margin-side);
+    padding-right: var(--margin-side);
+  }
+  &-sp {
+    @include mq_medium_max {
+      padding-left: var(--margin-side);
+      padding-right: var(--margin-side);
+    }
+  }
+  &-fit {
+    margin-left: calc(-1 * var(--margin-side));
+    margin-right: calc(-1 * var(--margin-side));
+  }
+  &-pc {
+    @include mq_medium {
+      max-width: calc(var(--width-max) + var(--margin-side) * 2);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: var(--margin-side);
+      padding-right: var(--margin-side);
+    }
+  }
+}

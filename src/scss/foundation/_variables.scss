@@ -1,0 +1,117 @@
+$design-base-width-sp: 414;
+$design-base-width: 1280;
+
+$breakpoint-small: 375px;
+$breakpoint-medium: 1001px;
+$breakpoint-large: 1400px;
+$breakpoint-xl: 0px;
+
+$breakpoint-small-number: 375;
+$breakpoint-medium-number: 800;
+$breakpoint-large-number: 1400;
+$breakpoint-xl-number: 0;
+
+$width-contents: 1080px;
+$width-contents-narrow: 0px;
+$width-contents-wide: 1680px;
+$width-contents-narrow-sp: 0;
+$width-contents-wide-sp: 0;
+
+$font-size-xs: 14;
+$font-size-small: 16;
+$font-size-medium: 18;
+$font-size-large: 20;
+$font-size-xl: 22;
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --orange: #;
+  --blue: #;
+  --yellow: #;
+  --navy: #;
+  --red: #f00;
+  --green-dark: #55af49;
+  --green: #92c58b;
+  --green-light: #e1f8dd;
+  --pink: #;
+  --gray: #;
+  --gray-dark: #adaeae;
+  --gray-light: #f5f5f5;
+
+  --breakpoint-small: #{$breakpoint-small};
+  --breakpoint-medium: #{$breakpoint-medium};
+  --breakpoint-large: #{$breakpoint-large};
+  --breakpoint-xl: #{$breakpoint-xl};
+
+  --width-contents: #{$width-contents};
+  --width-contents-narrow: #{$width-contents-narrow};
+  --width-contents-wide: #{$width-contents-wide};
+  --width-contents-narrow-sp: #{$width-contents-narrow-sp};
+  --width-contents-wide-sp: #{$width-contents-wide-sp};
+
+  --height-header: 70px;
+
+  --font-family-en: "", sans-serif;
+  --font-family-serif: "Noto Serif JP", serif;
+  --font-family-sans-serif: sans-serif;
+  --font-size-xs: 1.4rem;
+  --font-size-small: 1.6rem;
+  --font-size-medium: 1.8rem;
+  --font-size-large: 2rem;
+  --font-size-xl: 2.2rem;
+
+  --line-height-small: 1.8;
+  --line-height-medium: 2;
+  --line-height-large: 2.2;
+  --line-height-xl: 2.4;
+
+  --margin-side: min(20px, 5.3vw);
+
+  // --margin-section-small: min(120px, 32vw);
+  // --margin-section-medium: min(140px, 37.33vw);
+  // --margin-section-large: min(160px, 42.66vw);
+
+  --margin-section-xs: min(80px, 19.32vw);
+  --margin-section-small: min(100px, 26.66vw);
+  --margin-section-medium: min(120px, 32vw);
+  --margin-section-large: min(140px, 37.33vw);
+
+  --margin-xxs: min(16px, 3.86vw);
+  --margin-xs: min(24px, 5.79vw);
+  --margin-small: min(32px, 7.72vw);
+  --margin-medium: min(40px, 9.66vw);
+  --margin-large: min(48px, 11.59vw);
+  --margin-xl: min(56px, 13.52vw);
+
+  --border-radius-xs: 4px;
+  --border-radius-small: 8px;
+  --border-radius-medium: 16px;
+  --border-radius-large: 24px;
+
+  @include mq_medium {
+    --height-header: 100px;
+
+    --margin-side: min(100px, 7.8125vw);
+
+    --margin-section-xs: min(100px, 10vw);
+    --margin-section-small: min(120px, 12vw);
+    --margin-section-medium: min(140px, 14vw);
+    --margin-section-large: min(160px, 16vw);
+
+    // --margin-section-small: min(40px, 3.3vw);
+    // --margin-section-medium: min(80px, 6.7vw);
+    // --margin-section-large: min(120px, 10vw);
+
+    // --margin-editor-small: min(30px, 2.5vw);
+    // --margin-editor-medium: min(50px, 4.2vw);
+
+    // --padding-box-small: 0;
+    // --padding-box-medium: min(30px, 2.5vw);
+    // --padding-box-large: 0;
+
+    // --border-radius-small: 0px;
+    // --border-radius-medium: 0px;
+    // --border-radius-large: 0px;
+  }
+}

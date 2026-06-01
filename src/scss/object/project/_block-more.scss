@@ -1,0 +1,36 @@
+.p-block-more {
+  @include mgt_vw(80);
+  &__item {
+    // display: inline-block;
+    // letter-spacing: 0.1em;
+    // font-size: get_vw_min(20, 22, 375);
+    // text-decoration: none;
+    // position: relative;
+    // padding-bottom: 16px;
+    // line-height: 1;
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 1px;
+    //   background: var(--black);
+    //   transition: 0.2s;
+    // }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 1px;
+    //   background: var(--green);
+    // }
+    // &:hover {
+    //   &::after {
+    //     transform: translateX(10px);
+    //   }
+    // }
+  }
+}

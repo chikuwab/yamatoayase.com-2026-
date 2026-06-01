@@ -1,0 +1,58 @@
+<?php
+get_header();
+/*
+Template Name: 医薬品在庫情報
+*/
+?>
+<main class="l-main">
+  <div class="l-main__header">
+    <header class="p-header-primary u-inner">
+      <div class="p-header-primary__sub">医療機関の皆様へ</div>
+      <div class="p-header-primary__main">医薬品在庫情報</div>
+      <div class="p-header-primary__pic p-header-primary__pic--medical"><img class="u-img-radius" src="/assets/img/medical-visual@2x.webp" srcset="/assets/img/medical-visual.webp 1x, /assets/img/medical-visual@2x.webp 2x, " alt=""></div>
+    </header>
+  </div>
+  <div class="l-main__contents">
+    <section class="p-section-primary" id="entry">
+      <div class="p-section-primary__item u-inner">
+        <div class="p-block-editor">
+          <p>本ページでは、地域内薬局（一部）における医薬品の在庫状況を、医療機関の皆さま向けに掲載しています。処方時の在庫確認や、患者さんへの薬局案内の参考情報としてご活用ください。
+            <br>掲載している在庫情報は、各薬局からの報告をもとに随時更新しています。
+          </p>
+          <p class="u-color-red">※本情報は医療機関向けの参考情報です。</p>
+          <h2>ご利用方法</h2>
+          <ul>
+            <li>処方時に、対象医薬品の在庫がある薬局の目安としてご確認ください。</li>
+            <li>患者さんへ薬局を案内する際の参考情報としてご利用ください。</li>
+            <li>ファイル形式はExcel（マクロ機能付き）です。</li>
+          </ul>
+          <p>
+            <a class="u-link-pdf" href="/assets/doc/pharmacy-inventory.pdf?r=2026" target="_blank">Excelファイルの利用方法</a>
+          </p>
+          <h2>注意事項（免責事項）</h2>
+          <ul>
+            <li>在庫は日々変動するため、本ページの情報は最新の状況を保証するものではありません。</li>
+            <li>実際の在庫状況、在庫の確保や取り置きの可否については、必ず各薬局へ直接ご確認ください。</li>
+            <li>本情報の利用により生じたいかなる損害についても、当会は責任を負いかねます。</li>
+          </ul>
+          <div>
+            <a class="p-button-pdf" href="/assets/doc/zaiko.xlsm" target="_blank" style="min-width: 180px">
+              <div class="p-button-pdf__item">在庫リスト</div>
+            </a>
+          </div>
+          <div class="u-mg-t15">
+            <a class="p-button-pdf" href="/assets/doc/zaiko-narcotic.xlsm" target="_blank" style="min-width: 180px">
+              <div class="p-button-pdf__item">麻薬在庫リスト</div>
+            </a>
+          </div>
+          <div class="u-mg-t15">
+            <a class="p-button-pdf" href="/assets/doc/zaiko-yueki.xlsm" target="_blank" style="min-width: 180px">
+              <div class="p-button-pdf__item">輸液在庫リスト</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<?php get_footer();

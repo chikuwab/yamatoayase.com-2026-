@@ -1,0 +1,14 @@
+.l-main {
+  margin-top: var(--height-header);
+  padding-bottom: var(--margin-section-medium);
+  background-color: var(--white);
+  position: relative; //fullscreenの場合必要
+  z-index: 2; //fullscreenの場合必要
+  &__header {
+    @include pdt_vw(64);
+    @include pdb_vw(64);
+  }
+  &__contents {
+    @include pdt_vw(80);
+  }
+}

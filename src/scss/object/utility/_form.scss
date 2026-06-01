@@ -1,0 +1,22 @@
+.u-form {
+  &-select {
+    appearance: none;
+    background: #fff
+      url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216.263%22%20height%3D%2216.263%22%20viewBox%3D%220%200%2016.263%2016.263%22%3E%3Cpath%20d%3D%22M.354%207.779l7.778%207.778%207.778-7.778%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221%22%2F%3E%3C%2Fsvg%3E)
+      right 15px top 40% no-repeat;
+    padding: 12px 40px 12px 20px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0;
+    border: 1px solid #000;
+    @include mq_medium {
+      min-width: 320px;
+    }
+    @include mq_medium_max {
+      width: 100%;
+    }
+    ::-ms-expand {
+      display: none;
+    }
+  }
+}

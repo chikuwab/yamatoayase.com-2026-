@@ -1,0 +1,10 @@
+.p-section-primary {
+  &:not(:first-child) {
+    margin-top: var(--margin-section-medium);
+  }
+  &--bg {
+    padding: var(--margin-section-large) 0;
+  }
+  &__item {
+  }
+}

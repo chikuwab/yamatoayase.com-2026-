@@ -1,0 +1,12 @@
+.u-figure {
+  &-primary {
+    img {
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    figcaption {
+      margin-top: 8px;
+      text-align: center;
+    }
+  }
+}

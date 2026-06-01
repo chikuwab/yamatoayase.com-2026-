@@ -1,0 +1,15 @@
+.p-link-member {
+  color: var(--black);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  &::after {
+    position: absolute;
+    top: calc(50% + 2px);
+    left: 0;
+    transform: translateY(-50%);
+    @include aicon-arrow-right-to-bracket-solid;
+    color: var(--green);
+  }
+}

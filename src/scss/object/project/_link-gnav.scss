@@ -1,0 +1,18 @@
+.p-link-gnav {
+  color: var(--black);
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding-right: 40px;
+  transition: 0.2s;
+  &:hover {
+    color: var(--green-dark);
+  }
+  &::after {
+    position: absolute;
+    top: calc(50% + 2px);
+    right: 0;
+    transform: translateY(-50%);
+    @include aicon-right-open-big;
+  }
+}

@@ -1,0 +1,44 @@
+include _components/_config.pug
+
+- var PAGE_TITLE = "";
+
+doctype
+html(lang="ja")
+  head
+    include _components/_head.pug
+  body
+    <!--#include virtual="/_includes/header.html"-->
+      main.l-main
+        .l-main__header
+          header.p-header-primary.u-inner
+            .p-header-primary__sub Contact
+            .p-header-primary__main お問い合わせ
+        .l-main__contents.u-pd-t20 
+          section.p-section-primary
+            .p-section-primary__item.u-inner
+              .p-block-editor
+                p 地域の薬局や薬剤師会に関する、ご意見、ご相談、ご依頼などありましたらこちらのフォームよりお願いいたします。
+                h2 苦情相談
+                p 地域の薬局を利用して困ったことや、ご意見などはこちら。
+                .u-mg-t-small
+                  a.p-button-gf(href="https://forms.gle/mp68fy9j5juyvkD1A", target="_blank")
+                    .p-button-gf__item 苦情相談フォーム
+                h2 薬局マッチング
+                p 退院時カンファレンスや在宅対応のできる薬局など、地域の薬局をお探しの際はこちら。
+                .u-mg-t-small
+                  a.p-button-gf(href="https://forms.gle/tKxAwJQxVKLE3Wen9", target="_blank")
+                    .p-button-gf__item 薬局マッチングフォーム
+                h2 薬剤師会の活動への参加希望
+                p 薬剤師会の活動に興味があり、活動への参加を希望する場合はこちら。
+                .u-mg-t-small
+                  a.p-button-gf(href="https://forms.gle/6xSpDkUMzLtHxgs77", target="_blank")
+                    .p-button-gf__item 参加希望フォーム
+                h2 お問い合わせ
+                p 薬剤師会へのご意見やお問い合わせはこちら。
+                .u-mg-t-small
+                  a.p-button-gf(href="https://forms.gle/8jDvNzYqv5r2ZLhW8", target="_blank")
+                    .p-button-gf__item お問い合わせフォーム
+    <!--#include virtual="/_includes/footer.html"-->
+    <!--#include virtual="/_includes/footer-include.html"-->
+
+

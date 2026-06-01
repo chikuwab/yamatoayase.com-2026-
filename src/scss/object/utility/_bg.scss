@@ -1,0 +1,32 @@
+.u-bg {
+	&-dot {
+		position: relative;
+		&::before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-size: 20px 20px;
+			content: "";
+			display: block;
+			height: 20px;
+			width: 100%;
+		}
+		&-orange {
+			&::before {
+				background: radial-gradient(circle farthest-side, var(--orange), var(--orange) 30%, transparent 30%, transparent);
+			}
+		}
+	}
+	&-gray {
+		background-color: var(--gray);
+		&-light {
+			background-color: var(--gray-light);
+		}
+	}
+	&-white {
+		background-color: var(--white);
+	}
+	&-black {
+		background-color: var(--black);
+	}
+}

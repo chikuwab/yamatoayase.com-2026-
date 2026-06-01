@@ -1,0 +1,211 @@
+@charset "utf-8";
+:root {
+  --outer-height: 100vh;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--height-header);
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  font-family: var(--font-family-serif);
+  @include fz_vw_sp(18);
+  @include mq_medium {
+    @include fz_vw(18);
+  }
+  color: var(--black);
+  -webkit-text-size-adjust: 100%;
+  @include font-smoothing(1);
+  // transition: 0.3s;
+  // background-color: var(--gray);
+  // background-position: center;
+  // background-image: url(../img/bg.webp);
+  // background-repeat: repeat-y;
+}
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-family-serif);
+}
+button {
+  border: 0;
+  background-color: transparent;
+}
+p {
+  line-height: var(--line-height-medium);
+  @include line_height_crop(var(--line-height-medium));
+  @include mq_medium_max {
+    text-align: justify;
+  }
+}
+li,
+th,
+td,
+dt,
+dd,
+a,
+input[type="submit"],
+input[type="button"] {
+  line-height: var(--line-height-small);
+  letter-spacing: 0.05rem;
+  font-feature-settings: "pkna";
+}
+input[type="file"] {
+  line-height: 1;
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+submit,
+button {
+  &:focus {
+    outline: none;
+  }
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.9;
+  letter-spacing: 0.15em;
+}
+a {
+  color: var(--blue-dark);
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  word-wrap: break-word;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+  * {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  // &[href$=".mp3"],
+  // &[href$=".jpg"],
+  // &[href$=".jpeg"],
+  // &[href$=".txt"],
+  // &[href$=".ppt"],
+  // &[href$=".pptx"],
+  // &[href$=".xls"],
+  // &[href$=".xlsx"],
+  // &[href$=".doc"],
+  // &[href$=".docx"],
+  // &[href$=".pdf"] {
+  // 	&:not(.is-noicon) {
+  // 		display: inline-block;
+  // 		padding: 10px 0 10px 50px;
+  // 		position: relative;
+  // 		&::after {
+  // 			content: "";
+  // 			position: absolute;
+  // 			top: 50%;
+  // 			transform: translateY(-50%);
+  // 			left: 0;
+  // 			width: 30px;
+  // 			height: 39px;
+  // 			background-repeat: no-repeat;
+  // 			background-position: center;
+  // 		}
+  // 	}
+  // }
+  // &[href$=".mp3"],
+  // &[href$=".jpg"],
+  // &[href$=".jpeg"],
+  // &[href$=".txt"],
+  // &[href$=".ppt"],
+  // &[href$=".pptx"],
+  // &[href$=".xls"],
+  // &[href$=".xlsx"] {
+  // 	&::after {
+  // 		background-image: url(../img/common/file-other.svg);
+  // 	}
+  // }
+  // &[href$=".docx"],
+  // &[href$=".doc"] {
+  // 	&::after {
+  // 		background-image: url(../img/common/file-doc.svg);
+  // 	}
+  // }
+  // &[href$=".pdf"] {
+  // 	&::after {
+  // 		background-image: url(../img/common/file-pdf.svg);
+  // 	}
+  // }
+}
+
+textarea,
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  @include placeholder(#a0a0a0);
+}
+svg,
+img {
+  max-width: 100%;
+  // width: 100%;
+}
+img {
+  @include mq_medium_max {
+    width: 100%;
+  }
+}
+i {
+  font-style: normal;
+}
+
+@include mq_medium {
+  body {
+  }
+  a[href^="tel:"] {
+    pointer-events: none;
+    text-decoration: none;
+  }
+}
+
+details {
+  /* --------アコーディオンの中身のスタイル-------- */
+  &::details-content {
+    transition:
+      height 0.4s,
+      opacity 0.4s,
+      content-visibility 0.4s allow-discrete;
+    height: 0;
+    opacity: 0;
+    overflow: clip;
+  }
+
+  /* --------アコーディオンの中身のスタイル（開いている時）-------- */
+  &[open]::details-content {
+    opacity: 1;
+  }
+
+  /* アコーディオンが開いた時のスタイル */
+  // &[open] .icon {
+  //   transform: rotate(180deg);
+  // }
+}
+
+@supports (interpolate-size: allow-keywords) {
+  :root {
+    interpolate-size: allow-keywords; /* height:0（数値型） → auto（文字型） のアニメーションを可能にするための指定 */
+  }
+  details[open]::details-content {
+    height: auto;
+  }
+}
+
+/* height:0→autoへのアニメーションが対応していない場合は、固定値にアニメーションさせる */
+@supports not (interpolate-size: allow-keywords) {
+  details[open]::details-content {
+    height: 150px;
+    overflow-y: scroll;
+  }
+}

@@ -1,0 +1,79 @@
+include _components/_config.pug
+
+- var PAGE_TITLE = "";
+
+doctype
+html(lang="ja")
+  head
+    include _components/_head.pug
+  body
+    <!--#include virtual="/_includes/header.html"-->
+      .p-block-fullscreen
+        .p-block-fullscreen__box
+          .p-block-fullscreen__bg
+            img.p-block-fullscreen__img(src="/assets/img/home-visual@2x.webp", srcset="/assets/img/home-visual.webp 1x, /assets/img/home-visual@2x.webp 2x, ", alt="")
+          .p-block-fullscreen__cont 
+            .p-block-fullscreen__logo
+              img(src="/assets/img/logo-mark.svg", alt="")
+            .p-block-fullscreen__copy
+              p 大和綾瀬薬剤師会は、
+                br
+                | 地域住民の信頼に応え、
+                br
+                | 公衆衛生に寄与いたします。
+      main.l-main
+        .l-main__contents 
+          section.p-section-primary
+            .p-section-primary__item.u-inner
+              .p-block-editor
+                p.u-lh-xl.u-lh-sp-medium.u-font-xl.u-font-sp-large 医療・福祉・介護、そして行政の方々と協働しながら、地域を支える体制づくりを推進し、市民・住民の皆さまが病気になったり体が衰えたりしても、なじみのある綾瀬市・大和市で最後まで安心して暮らせる地域づくり、そして誰にとっても住みやすい街の実現を目指して、大和綾瀬薬剤師会は活動しています。
+          section.p-section-primary
+            .p-section-primary__item.u-inner-wide
+              nav.p-nav-global.p-nav-global--home
+                include _components/_nav-global.pug
+          section.p-section-primary
+            .p-section-primary__item.u-inner-wide
+              .p-block-news-list.p-block-news-list--home
+                .p-block-news-list__header
+                  h2.p-title-primary お知らせ
+                .p-block-news-list__content.u-mg-t-small
+                  a(href="/news-single.html").p-block-news-list__item 
+                    .p-block-news-list__date 2026年2月28日
+                    .p-block-news-list__category 患者様・一般の方向け
+                    .p-block-news-list__title お問い合わせ方法について
+                  a(href="/news-single.html").p-block-news-list__item 
+                    .p-block-news-list__date 2026年2月25日
+                    .p-block-news-list__category 医療機関向け
+                    .p-block-news-list__title 地域における緊急避妊薬対応薬局のリスト作成に関する調査（ご協力のお願い）
+                  a(href="/news-single.html").p-block-news-list__item 
+                    .p-block-news-list__date 2026年2月25日
+                    .p-block-news-list__category 医療機関向け
+                    .p-block-news-list__title 地域における緊急避妊薬対応薬局のリスト作成に関する調査（ご協力のお願い）
+                  a(href="/news-single.html").p-block-news-list__item 
+                    .p-block-news-list__date 2026年2月28日
+                    .p-block-news-list__category 患者様・一般の方向け
+                    .p-block-news-list__title お問い合わせ方法について
+                  a(href="/news-single.html").p-block-news-list__item 
+                    .p-block-news-list__date 2026年2月25日
+                    .p-block-news-list__category 医療機関向け
+                    .p-block-news-list__title 地域における緊急避妊薬対応薬局のリスト作成に関する調査（ご協力のお願い）
+              .p-block-more.u-text-right 
+                .p-block-more__item
+                  a(href="/news.html").p-link-arrow
+                    .p-link-arrow__item お知らせ一覧
+
+          .p-section-primary.u-inner
+            .p-section-primary__item
+              .p-block-border
+                .p-block-border__item.u-editor
+                  p.u-text-center.u-text-sp-left 夜間、処方箋のお薬の受け取りにお困りの際には夜間当番薬局へご連絡ください。
+                  p.u-text-center 大和市休日・夜間当番薬局
+                    span.u-disp-inb TEL：
+                      span.u-font-w600 046-200-8380
+
+
+
+    <!--#include virtual="/_includes/footer.html"-->
+    <!--#include virtual="/_includes/footer-include.html"-->
+
+

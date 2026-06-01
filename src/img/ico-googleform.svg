@@ -1,0 +1,17 @@
+<svg id="ico_googleform" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="33" viewBox="0 0 24 33">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_27" data-name="長方形 27" width="24" height="33" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_12" data-name="グループ 12" clip-path="url(#clip-path)">
+    <path id="パス_112" data-name="パス 112" d="M21.75,33H2.25A2.25,2.25,0,0,1,0,30.75V2.25A2.25,2.25,0,0,1,2.25,0h13.5L24,8.25v22.5A2.25,2.25,0,0,1,21.75,33" fill="#7248b9"/>
+    <path id="パス_113" data-name="パス 113" d="M15.75,0,24,8.25H15.75Z" fill="#56368a"/>
+    <rect id="長方形_24" data-name="長方形 24" width="9.375" height="1.875" transform="translate(9.375 12.75)" fill="#fff"/>
+    <path id="パス_114" data-name="パス 114" d="M6.375,14.813A1.125,1.125,0,1,0,5.25,13.688a1.125,1.125,0,0,0,1.125,1.125" fill="#fff"/>
+    <rect id="長方形_25" data-name="長方形 25" width="9.375" height="1.875" transform="translate(9.375 17.25)" fill="#fff"/>
+    <path id="パス_115" data-name="パス 115" d="M6.375,19.313A1.125,1.125,0,1,0,5.25,18.188a1.125,1.125,0,0,0,1.125,1.125" fill="#fff"/>
+    <rect id="長方形_26" data-name="長方形 26" width="9.375" height="1.875" transform="translate(9.375 21.75)" fill="#fff"/>
+    <path id="パス_116" data-name="パス 116" d="M6.375,23.813A1.125,1.125,0,1,0,5.25,22.688a1.125,1.125,0,0,0,1.125,1.125" fill="#fff"/>
+  </g>
+</svg>

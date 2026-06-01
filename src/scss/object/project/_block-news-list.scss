@@ -1,0 +1,85 @@
+.p-block-news-list {
+  &--home {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background: url(../img/illust-women.svg) center 0 no-repeat;
+    }
+    @include mq_medium {
+      padding-left: 16vw;
+      &::after {
+        top: -50px;
+        left: 0;
+        width: 16vw;
+        height: 100%;
+      }
+    }
+    @include mq_medium_max {
+      &::after {
+        top: -120px;
+        right: 0;
+        width: 60px;
+        height: 180px;
+        background-size: contain;
+      }
+    }
+  }
+  &__header {
+  }
+  &__item {
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    @include mq_medium_max {
+      flex-wrap: wrap;
+    }
+    &:hover {
+      background-color: var(--green-light) !important;
+      // color: var(--green);
+    }
+    &:not(:first-child) {
+      @include mq_medium_max {
+        padding-top: 24px;
+      }
+    }
+    @include mq_medium_max {
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--gray-light);
+    }
+    @include mq_medium {
+      padding: 16px;
+    }
+    &:nth-child(odd) {
+      @include mq_medium {
+        background-color: var(--gray-light);
+      }
+    }
+  }
+  &__date {
+    @include font_size(16);
+    @include mq_medium {
+      flex-basis: 140px;
+      text-align: center;
+    }
+  }
+  &__category {
+    @include font_size(16);
+    margin-left: 16px;
+    @include mq_medium {
+      margin-left: 0;
+      flex-basis: 150px;
+      text-align: center;
+    }
+  }
+  &__title {
+    @include mq_medium_max {
+      flex-basis: 100%;
+    }
+    @include mq_medium {
+      flex-basis: calc(100% - 350px);
+    }
+  }
+}

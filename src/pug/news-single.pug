@@ -1,0 +1,40 @@
+include _components/_config.pug
+
+- var PAGE_TITLE = "";
+
+doctype
+html(lang="ja")
+  head
+    include _components/_head.pug
+  body
+    <!--#include virtual="/_includes/header.html"-->
+      main.l-main
+        .l-main__header
+          header.p-header-primary.u-inner
+            .p-header-primary__sub News
+            .p-header-primary__main お知らせ
+        .l-main__contents.u-pd-t50 
+          section.p-section-primary
+            .p-section-primary__item.u-inner
+              .p-block-primary
+                header.p-block-primary__header
+                  p 2026.03.12
+                    a(href="#").u-mg-l20 患者様・一般の方向け
+                  h1.p-title-secondary.u-mg-t-large
+                    .p-title-secondary__item 法人格変更に伴う名称の変更について
+                .p-block-primary__contents
+                  .p-block-editor
+                    p 平素より当会の活動にご理解とご協力を賜り、誠にありがとうございます。
+                    p このたび当会は、法人格の変更に伴い「公益社団法人」から「一般社団法人」へ名称を変更することとなりました。
+                    p 今回の変更は法人格上の区分が変わるものですが、これまで取り組んできた事業内容や地域への貢献、会員支援の活動に変わりはございません。
+                    p 今後も変わらず地域の皆様、行政・医療関係機関、会員の皆様のお力になれるよう努めてまいります。
+                    p 今後ともどうぞよろしくお願いいたします。	
+
+              .u-mg-t-section-small
+                  a(href="/news.html").p-link-arrow.p-link-arrow--back
+                    .p-link-arrow__item お知らせ一覧
+
+    <!--#include virtual="/_includes/footer.html"-->
+    <!--#include virtual="/_includes/footer-include.html"-->
+
+

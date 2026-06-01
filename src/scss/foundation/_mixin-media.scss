@@ -1,0 +1,48 @@
+@mixin mq_small($break-point: $breakpoint-small) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+@mixin mq_medium($break-point: $breakpoint-medium) {
+  @media screen and (min-width: $break-point), print {
+    @content;
+  }
+}
+
+@mixin mq_small_max($break-point: $breakpoint-small - 1) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+@mixin mq_medium_max($break-point: $breakpoint-medium - 1) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+@mixin mq_tablet_only($break-point-min: $breakpoint-small, $break-point-max: $breakpoint-medium) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@mixin mq_p() {
+  @media screen and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin mq_max_p($break-point: $breakpoint-medium) {
+  @media screen and (max-width: $break-point) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin mq_l() {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin mq_max_l($break-point: $breakpoint-medium) {
+  @media screen and (max-width: $break-point) and (orientation: landscape) {
+    @content;
+  }
+}

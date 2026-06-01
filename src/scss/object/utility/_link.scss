@@ -1,0 +1,26 @@
+.u-link {
+  &-inherit {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  &-inlinesvg {
+    cursor: pointer;
+  }
+  &-pdf {
+    display: inline-block;
+    // text-decoration: none !important;
+    position: relative;
+    padding-right: 24px;
+    transition: 0.2s;
+    &:hover {
+      color: var(--green-dark);
+    }
+    &::after {
+      position: absolute;
+      top: calc(50% + 2px);
+      right: 0;
+      transform: translateY(-50%);
+      @include aicon-doc-text;
+    }
+  }
+}

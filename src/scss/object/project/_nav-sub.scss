@@ -1,0 +1,26 @@
+.p-nav-sub {
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    @include mq_medium {
+    }
+  }
+  &__item {
+    // @include mgt_vw(24);
+    @include mq_medium_max {
+      flex-basis: calc(50% - 2px);
+      &:nth-child(2) {
+        margin-left: 4px;
+      }
+      &:nth-child(3) {
+        flex-basis: 100%;
+        @include mgt_vw(16);
+      }
+    }
+    @include mq_medium {
+      &:not(:first-child) {
+        margin-left: 4px;
+      }
+    }
+  }
+}

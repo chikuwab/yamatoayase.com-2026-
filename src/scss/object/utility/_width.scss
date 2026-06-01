@@ -1,0 +1,25 @@
+.u-width {
+  @for $i from 1 through 10 {
+    &-#{$i * 10}p {
+      width: $i * 10%;
+    }
+  }
+}
+@include mq_medium_max {
+  .u-width-sp {
+    @for $i from 1 through 10 {
+      &-#{$i * 10}p {
+        width: $i * 10%;
+      }
+    }
+  }
+}
+@include mq_medium {
+  .u-width-pc {
+    @for $i from 1 through 10 {
+      &-#{$i * 10}p {
+        width: $i * 10%;
+      }
+    }
+  }
+}

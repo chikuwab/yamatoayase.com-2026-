@@ -1,0 +1,93 @@
+.mw_wp_form {
+  input[type="submit"] {
+    appearance: none;
+    // border: 0;
+  }
+  .error {
+    color: #ed6f6f !important;
+  }
+}
+.mw_state {
+  display: none;
+}
+.mw_wp_form_input {
+  .mw_state--input {
+    display: block;
+  }
+}
+.mw_wp_form_confirm {
+  .mw_state--confirm {
+    display: block;
+  }
+  .p-contact__data {
+    padding: 1.1em;
+    background-color: #fffaf0;
+  }
+  .p-form {
+    &--vertical {
+      @include mq_medium {
+        .p-form__item {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+.mw_wp_form_complete {
+  .mw_state--complate {
+    display: block;
+  }
+}
+
+.mwform-radio-field {
+  margin-top: 15px;
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.mwform-radio-field-text {
+  display: inline-block;
+  position: relative;
+  padding: 5px 0 5px 40px;
+  cursor: pointer;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  &--check {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      transform: translateY(-50%);
+      border: 1px solid #e0e0e0;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      transform: translateY(-50%);
+      box-sizing: border-box;
+      background: url(../img/svg/check.svg) center no-repeat;
+      display: none;
+    }
+  }
+}

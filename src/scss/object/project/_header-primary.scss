@@ -1,0 +1,61 @@
+.p-header-primary {
+  &__sub {
+    text-align: center;
+    letter-spacing: 0.1em;
+    @include fz_vw_sp(16);
+    @include mq_medium {
+      @include fz_vw(20);
+    }
+  }
+  &__main {
+    @include mgt_vw(24);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    @include fz_vw_sp(28);
+    @include mq_medium {
+      @include fz_vw(48);
+    }
+  }
+  &__nav {
+    @include mgt_vw(40);
+  }
+  &__pic {
+    @include mgt_vw(80);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateY(50%) translateX(-50%) scale(0.8);
+      width: 110px;
+      height: 230px;
+      background: url(../img/illust-men.svg) center no-repeat;
+      background-size: contain;
+      @include mq_medium_max {
+        transform: translateY(50%) translateX(-54%) scale(0.6);
+      }
+      @include mq_medium {
+        width: 148px;
+        height: 278px;
+      }
+    }
+    &--public {
+      &::after {
+        background-image: url(../img/illust-women.svg);
+      }
+    }
+    &--medical {
+      &::after {
+        bottom: -18px;
+        width: 90px;
+        height: 140px;
+        background-image: url(../img/icon-medicine-03.svg);
+        @include mq_medium {
+          bottom: -23px;
+        }
+      }
+    }
+  }
+}

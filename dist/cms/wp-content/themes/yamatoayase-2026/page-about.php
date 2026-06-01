@@ -1,0 +1,143 @@
+<?php
+get_header();
+/*
+Template Name: 薬剤師会紹介
+*/
+?>
+<main class="l-main">
+  <div class="l-main__header">
+    <header class="p-header-primary u-inner">
+      <div class="p-header-primary__sub">薬剤師会の活動について</div>
+      <div class="p-header-primary__main">薬剤師会紹介</div>
+      <div class="p-header-primary__nav">
+        <nav class="p-nav-anchor"><a class="p-nav-anchor__item" href="#philosophy">理念</a><a class="p-nav-anchor__item" href="#message">会長挨拶</a><a class="p-nav-anchor__item" href="#list">役員名簿</a><a class="p-nav-anchor__item" href="#link">関連サイト</a></nav>
+      </div>
+      <div class="p-header-primary__pic"><img class="u-img-radius" src="/assets/img/about-visual@2x.webp" srcset="/assets/img/about-visual.webp 1x, /assets/img/about-visual@2x.webp 2x, " alt=""></div>
+    </header>
+  </div>
+  <div class="l-main__contents">
+    <section class="p-section-primary" id="philosophy">
+      <div class="p-section-primary__item u-inner">
+        <div class="p-block-editor">
+          <h2>大和綾瀬薬剤師会の理念</h2>
+          <p>私たち大和綾瀬薬剤師会は、医薬品を通じて地域住民の健康と生活を支える専門職の集団として、時代の変化とともにその役割を発展させてきました。</p>
+          <p>社会は今、急速な少子高齢化、医療需要の変化、生活様式の多様化という大きな転換期を迎えています。医療は「病院で完結するもの」から、「地域で支え続けるもの」へと移行しつつあります。</p>
+          <p>この変化の中で、薬剤師の使命は単に医薬品を供給することにとどまりません。私たちは、医薬品の専門家として、安全で適切な薬物療法を支えるとともに、予防、在宅医療、健康相談、公衆衛生活動を通じて、地域住民の暮らしそのものを支える存在であることを目指します。</p>
+          <p>大和市・綾瀬市に暮らす誰もが、年齢や健康状態にかかわらず、住み慣れた地域で安心して生活を続けられる社会。その実現のために、私たちは医療・介護・福祉・行政と協働し、地域包括ケアの担い手として主体的に行動します。</p>
+          <p>一般社団法人への移行は、社会の変化に柔軟に対応し、地域課題に自ら向き合うための新たな出発です。私たちは専門職としての倫理と学術を礎に、市民から信頼される職能団体として成長し続けます。</p>
+          <p>医療の形が変わっても、「地域の健康を守る責任」は変わりません。</p>
+          <p>大和綾瀬薬剤師会は、2040年、その先の未来においても、地域とともに歩み続けます。</p>
+        </div>
+      </div>
+    </section>
+    <section class="p-section-primary" id="message">
+      <div class="p-section-primary__item u-inner">
+        <div class="p-block-editor">
+          <h2>会長挨拶</h2>
+          <p>大和綾瀬薬剤師会のホームページにアクセスいただき、ありがとうございます。</p>
+          <p>大和綾瀬薬剤師会は、これまで公益社団法人として、薬剤師の倫理および学術的水準の向上を図るとともに、地域住民の公衆衛生の増進と地域医療の発展に寄与することを使命として活動してまいりました。</p>
+          <p>そして令和8年4月より、当会は一般社団法人 大和綾瀬薬剤師会として新たな歩みを開始いたします。</p>
+          <p>法人形態は変わりますが、地域の皆様の健康と安全を支えるという使命に変わりはありません。むしろ、急速な少子高齢化や医療環境の変化が進むなかで、薬剤師が地域社会において果たすべき役割はこれまで以上に大きくなっています。</p>
+          <p>これからの薬剤師会は、医薬品の適正使用を支えるだけでなく、医療・介護・福祉・行政と連携しながら、地域住民一人ひとりの生活に寄り添い、健康を支える存在でありたいと考えています。住み慣れた大和市・綾瀬市において、病気や加齢による変化があっても安心して暮らし続けることができる地域づくりに、薬剤師の専門性を活かして貢献してまいります。</p>
+          <p>一般社団法人への移行は、地域の課題により柔軟かつ主体的に取り組むための新たな出発点です。私たちは職能団体としての責任と誇りを胸に、市民の皆様に信頼される活動を継続し、地域医療と公衆衛生の向上に努めてまいります。</p>
+          <p>今後とも、大和綾瀬薬剤師会の活動にご理解とご協力を賜りますよう、心よりお願い申し上げます。</p>
+          <p>令和8年4月</p>
+          <p class="u-font-w600 u-text-sp-left u-text-pc-right">一般社団法人 大和綾瀬薬剤師会 <span class="u-disp-inb">会長 加藤 久幸</span></p>
+        </div>
+      </div>
+    </section>
+    <section class="p-section-primary" id="list">
+      <div class="p-section-primary__item u-inner">
+        <div class="p-block-editor">
+          <h2>役員名簿</h2>
+          <table>
+            <tbody>
+              <tr>
+                <th>役職</th>
+                <th>氏名</th>
+                <th>施設名</th>
+              </tr>
+              <tr>
+                <td>会長</td>
+                <td>加藤 久幸</td>
+                <td>雙葉薬局</td>
+              </tr>
+              <tr>
+                <td>副会長</td>
+                <td>渡邉 幸一</td>
+                <td>桜ヶ丘東口駅前薬局</td>
+              </tr>
+              <tr>
+                <td>副会長</td>
+                <td>渡辺 哲也</td>
+                <td>綾瀬厚生病院</td>
+              </tr>
+              <tr>
+                <td class="u-white-space-nowrap">副会長</td>
+                <td class="u-white-space-nowrap">初鹿野 敬太</td>
+                <td>ヤマグチ薬局西鶴間店</td>
+              </tr>
+              <tr>
+                <td>副会長</td>
+                <td>大島 久明</td>
+                <td>桜ヶ丘東口駅前薬局</td>
+              </tr>
+              <tr>
+                <td>理事</td>
+                <td>村田 実希郎</td>
+                <td>横浜薬科大学</td>
+              </tr>
+              <tr>
+                <td>理事</td>
+                <td>佐藤 一馬</td>
+                <td>みらい薬局 大和店</td>
+              </tr>
+              <tr>
+                <td>理事</td>
+                <td>吉村 智之</td>
+                <td>ひらもと鶴間薬局</td>
+              </tr>
+              <tr>
+                <td>理事</td>
+                <td>本田 紋</td>
+                <td>雙葉薬局</td>
+              </tr>
+              <tr>
+                <td>監事</td>
+                <td>大塚 孝明</td>
+                <td>南林間薬局</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="p-section-primary" id="link">
+      <div class="p-section-primary__item u-inner">
+        <div class="p-block-editor">
+          <h2>関連サイト</h2>
+          <ul>
+            <li><a class="p-link-blank" href="http://www.nichiyaku.or.jp" target="_blank">日本薬剤師会</a></li>
+            <li><a class="p-link-blank" href="http://www.kpa.or.jp" target="_blank">神奈川県薬剤師会</a></li>
+            <li><a class="p-link-blank" href="https://yakuren.jp/" target="_blank">日本薬剤師連盟</a></li>
+            <li><a class="p-link-blank" href="https://k-yakuren.com/" target="_blank">神奈川県薬剤師連盟</a></li>
+            <li><a class="p-link-blank" href="https://www.mhlw.go.jp/index.html" target="_blank">厚生労働省</a></li>
+            <li><a class="p-link-blank" href="https://kouseikyoku.mhlw.go.jp/kantoshinetsu/gyomu/bu_ka/kanagawa/index.html" target="_blank">関東信越厚生局神奈川事務所</a></li>
+            <li><a class="p-link-blank" href="https://www.pref.kanagawa.jp/" target="_blank">神奈川県ホームページ</a></li>
+            <li><a class="p-link-blank" href="https://www.city.yamato.lg.jp/" target="_blank">大和市ホームページ</a></li>
+            <li><a class="p-link-blank" href="https://www.city.ayase.kanagawa.jp/" target="_blank">綾瀬市ホームページ</a></li>
+            <li><a class="p-link-blank" href="https://www.pref.kanagawa.jp/docs/e7a/index.html" target="_blank">厚木保健福祉事務所大和センター</a></li>
+            <li><a class="p-link-blank" href="http://www.kanagawa.med.or.jp/yamato/" target="_blank">大和市医師会</a></li>
+            <li><a class="p-link-blank" href="https://shimin.yamatoshikaishikai.or.jp/" target="_blank">大和綾瀬歯科医師会</a></li>
+            <li><a class="p-link-blank" href="https://www.jpec.or.jp/" target="_blank">日本薬剤師研修センター</a></li>
+            <li><a class="p-link-blank" href="https://www.kantou-chousei.org/" target="_blank">一般社団法人 薬学教育協議会 関東地区調整機構</a></li>
+            <li><a class="p-link-blank" href="http://www.iryo-kensaku.jp/kanagawa/" target="_blank">かながわ医療情報検索サービス</a></li>
+            <li><a class="p-link-blank" href="https://www.ssk.or.jp/shibu/14_kanagawa/index.html" target="_blank">社会保険診療報酬支払基金神奈川支部</a></li>
+            <li><a class="p-link-blank" href="https://www.kanagawa-kokuho.or.jp/" target="_blank">神奈川県国民健康保険団体連合会</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<?php get_footer();

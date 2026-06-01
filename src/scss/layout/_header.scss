@@ -1,0 +1,41 @@
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  height: var(--height-header);
+  width: 100%;
+  z-index: 20;
+  transition: background-color 0.5s;
+  &__inner {
+  }
+  &__logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    @include mq_medium_max {
+      width: calc(100% - 110px);
+      max-width: 250px;
+    }
+    @include mq_medium {
+      width: 270px;
+      left: 40px;
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.is-header-transparent {
+  .l-header {
+    @include mq_medium {
+      background-color: transparent;
+    }
+    &__btn {
+      background-color: var(--gray);
+    }
+  }
+}

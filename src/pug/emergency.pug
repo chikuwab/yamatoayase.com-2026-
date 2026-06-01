@@ -1,0 +1,87 @@
+include _components/_config.pug
+
+- var PAGE_TITLE = "";
+
+doctype
+html(lang="ja")
+  head
+    include _components/_head.pug
+  body
+    <!--#include virtual="/_includes/header.html"-->
+      main.l-main
+        .l-main__header
+          header.p-header-primary.u-inner
+            .p-header-primary__sub 市民の皆様へ
+            .p-header-primary__main 救急医療・休日夜間診療
+            .p-header-primary__nav
+              nav.p-nav-anchor
+                a(href="#yamato").p-nav-anchor__item 大和市
+                a(href="#ayase").p-nav-anchor__item 綾瀬市
+            .p-header-primary__pic.p-header-primary__pic--public
+                img.u-img-radius(src="/assets/img/public-visual@2x.webp", srcset="/assets/img/public-visual.webp 1x, /assets/img/public-visual@2x.webp 2x, ", alt="")
+        .l-main__contents 
+          section.p-section-primary#yamato
+            .p-section-primary__item.u-inner
+              .wp-block-columns.is-layout-flex
+                .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow(style="flex-basis: 50%")
+                  .p-block-editor
+                    h2 大和市
+                    h3 救急医療
+                    p 大和市地域医療センター休日夜間急患診療所
+                    dl.u-dl-primay
+                      dt 住所
+                      dd 大和市鶴間1丁目28番地号
+                        br
+                        | （勤労福祉会館となり）
+                      dt TEL
+                      dd 046-263-6800
+                      dt FAX
+                      dd 046-263-6813
+
+                    h4 受付時間
+                    dl.u-dl-primay.u-mg-t10
+                      dt 月曜～土曜（平日）
+                      dd 午後7時50分～10時45分
+                      dt 日曜、祝日、12/30～1/3
+                      dd 午前8時50分～11時45分
+                        br
+                        | 午後1時50分～4時45分
+                        br
+                        | 午後7時50分～10時45分
+
+                    h3 休日夜間診療
+                    p 大和市休日夜間診療体制は、
+                      a(href="https://www.city.yamato.lg.jp/gyosei/soshik/15/iryo/kyukyuiryo_kyujitsuyakannoiryotaisei/6697.html", target="_blank") こちら
+                      | をご覧ください。
+                    h3 夜間当番薬局
+                    p TEL：046-200-8380
+                .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow(style="flex-basis: 50%")
+                  .p-block-editor
+                    h2 綾瀬市
+                    h3 救急医療
+                    p 大和綾瀬薬剤師会綾瀬休日調剤薬局
+                    dl.u-dl-primay
+                      dt 住所
+                      dd 綾瀬市深谷中4丁目7-10
+                      dt TEL
+                      dd 0467-76-5388
+                      dt FAX
+                      dd 0467-76-5388
+
+                    h4 受付時間
+                    dl.u-dl-primay.u-mg-t10
+                      dt 休日・年末年始
+                      dd 午前9時00分～12時00分
+                        br
+                        | 午後13時30分～17時00分
+                        br
+                        | 午後19時00分～22時00分
+                    h3 休日夜間診療
+                    p 綾瀬市休日夜間診療体制は、
+                      a(href="https://www.zamaayase-ishikai.or.jp/pages/11/", target="_blank") こちら
+                      | をご覧ください。
+
+    <!--#include virtual="/_includes/footer.html"-->
+    <!--#include virtual="/_includes/footer-include.html"-->
+
+

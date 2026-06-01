@@ -1,0 +1,7 @@
+.p-block-border {
+  padding: calc(var(--margin-side) * 2) var(--margin-side);
+  border: 1px solid var(--gray-dark);
+  @include mq_medium {
+    padding: 60px;
+  }
+}

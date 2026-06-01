@@ -1,0 +1,345 @@
+include _components/_config.pug
+
+- var PAGE_TITLE = "";
+
+doctype
+html(lang="ja")
+  head
+    include _components/_head.pug
+  body
+    <!--#include virtual="/_includes/header.html"-->
+      main.l-main
+        .l-main__header
+          header.p-header-primary.u-inner
+            .p-header-primary__sub 薬剤師会紹介
+            .p-header-primary__main 活動内容
+            .p-header-primary__nav
+              nav.p-nav-anchor
+                a(href="#activities").p-nav-anchor__item 事業内容
+                a(href="#school").p-nav-anchor__item 学校薬剤師
+                a(href="#emergency").p-nav-anchor__item 夜間・休日薬剤師
+            .p-header-primary__pic
+                img.u-img-radius(src="/assets/img/activities-visual@2x.webp", srcset="/assets/img/activities-visual.webp 1x, /assets/img/activities-visual@2x.webp 2x, ", alt="")
+        .l-main__contents 
+          section.p-section-primary#activities
+            .p-section-primary__item.u-inner
+              .p-block-editor
+                h2 事業内容
+                h3 薬剤の適正使用等を通じて、地域住民の健康な生活環境を確保する事業。
+                  h4 薬学及び薬業の進歩発展に関する事業
+                  ul
+                    li 薬局実務実習生の受け入れの支援・指導・薬局育成・体制充実
+                    li 認定実務実習指導薬剤師の拡充・育成・研修・充実
+                  ul
+                    li 大和市の小学校19校・中学校9校・県立高等学校4校に薬剤師を派遣する
+                    li 綾瀬市の小学校10校・中学校5校・県立高等学校2校に薬剤師を派遣する
+                    li 学校の定期検査を実施し指導する
+                      ul
+                        li 給食施設
+                        li 教室内環境検査（プール水質・空気・照度など）
+                    li 以下の会議・キャンペーンに薬剤師を派遣する
+                      ul
+                        li 大和市学校給食共同調理場運営協議会
+                        li 大和市学校保健会総会
+                        li 綾瀬市学校保健会
+                        li 大和市学校保健研究協議会
+                        li 薬物乱用防止指導協議会
+                        li 大和市薬物乱用防止キャンペーン
+                        li 綾瀬市薬物乱用防止キャンペーン
+                    li 「おくすり教室」の実施
+                    li 薬物乱用教室の実施
+
+                  h4 薬事衛生の普及、及び啓発に関する事業
+                  ul
+                    li 厚木保健福祉事務所大和センター主催の会議に薬剤師を派遣する
+                      ul
+                        li 地域包括ケア・在宅医療推進会議
+                        li エイズ対策委員会
+                        li 禁煙対策推進協議会
+                        li 歯科保健推進委員会
+                        li 新型インフルエンザ等・感染症対策会議
+
+                  h4 災害時等の医薬品の確保と医療救護活動に関する事業
+                  ul
+                    li 災害時医薬品備蓄の保管・管理体制強化
+
+                      ul
+                        li 災害用備蓄品整備・配送の研究
+                        li 綾瀬休日調剤薬局内に災害時医薬品を備蓄・管理
+                        li 大和市・綾瀬市災害時医療救護体制検討会議
+                        li 大和市医療サミット会議
+                  h4 市民向け健康と公衆衛生の啓発事業
+                  ul
+                    li 健康サポート薬局の育成推進
+                    li 「健康都市やまとフェアー」に参加・展示・講演
+                    li 地域包括支援センターと合同会議
+                    li 大和市・綾瀬市の医療・介護研修にて多職種と連携
+                  h4 在宅・介護に関する事業
+                  ul
+                    li 地域包括支援センター連携会議
+                    li 在宅サポート薬局の拡充・支援・研修
+                    li 在宅医療研修会の実施
+                    li 大和保健医療福祉ネットワークへ参加・企画
+                    li 地域ケア会議への参加
+
+                h3 地域救急医療への貢献、並びに医療安全体制の確保に関する事業。
+                  h4 夜間休日救急医療体制への協力（平日の夜間・休日は昼夜間）
+                  ul
+                    li 大和市地域医療センター運営委員会
+                    li 大和市救急医療対策連絡協議会
+                  h4 収益事業
+                  ul
+                    li 綾瀬休日調剤薬局（綾瀬市保健福祉プラザ併設内）
+                      ul
+                        li 綾瀬市三師会連絡会
+                        li 綾瀬休日診療所・薬局合同研修会
+                        li 災害時備蓄医薬品の整備・管理
+                  h4 その他この法人の目的を達成するために必要な事業
+                  ul
+                    li 行政及び三師会に委員を派遣し、市民に貢献するための協議会
+                      ul
+                        li 大和市地域包括支援センター運営協議会
+                        li 介護保険認定審査会
+                        li 綾瀬市介護保険運営協議会
+                        li 大和市高齢者福祉計画・介護保険事業計画策定審議会
+                        li 綾瀬市保健福祉サービス推進委員会
+                        li 大和市国民健康保険運営協議会
+                        li 綾瀬市国民健康保険運営協議会
+                        li 薬剤師国民健康保険運営協議会
+                        li 地域包括ケア・在宅医療推進会議
+                        li エイズ対策委員会
+                        li （県）公衆衛生委員会
+                        li 禁煙対策推進協議会
+                        li 公衆衛生協会会議
+                        li 歯科保健推進委員会
+                        li 新型インフルエンザ等地域医療体制対策・感染症対策会議
+                    li 神奈川県薬剤師会への委員派遣
+                      ul
+                        li （県薬）リスクマネジメント委員会
+                        li （県薬）議事運営委員会
+                        li （県薬）公衆衛生・学薬委員会
+                        li 県央エリア協議会
+                        li 県央エリア研修会（県薬代議員総会）
+                        li 地域職域会長会
+
+          section.p-section-primary#school
+            .p-section-primary__item.u-inner
+              .p-block-editor
+                h2 学校薬剤師
+                .wp-block-columns.is-layout-flex
+                  .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow(style="flex-basis: 50%")
+                    h3 大和市
+                    table
+                      tbody
+                        tr
+                          th 中央林間小学校
+                          td 加藤 悦子
+                        tr
+                          th 北大和小学校
+                          td 砂生 孝江
+                        tr
+                          th 緑野小学校
+                          td 本田 紋
+                        tr
+                          th 南林間小学校
+                          td 勝矢 尚美
+                        tr
+                          th 林間小学校
+                          td 森 知穂
+                        tr
+                          th 西鶴間小学校
+                          td 千葉 文恵
+                        tr
+                          th 大和小学校
+                          td 目黒 勝靖
+                        tr
+                          th 大野原小学校
+                          td 小田桐 敦子
+                        tr
+                          th 草柳小学校
+                          td 伊藤 彩奈
+                        tr
+                          th 文ケ岡小学校
+                          td 小川原 悟
+                        tr
+                          th 大和東小学校
+                          td 鶴田 光美
+                        tr
+                          th 深見小学校
+                          td 福田 雄太朗
+                        tr
+                          th 引地台小学校
+                          td 岩政 香江
+                        tr
+                          th 柳橋小学校
+                          td 半田 彩
+                        tr
+                          th 桜丘小学校
+                          td 堀 直人
+                        tr
+                          th 福田小学校
+                          td 小山 紀子
+                        tr
+                          th 上和田小学校
+                          td 小田切 智子
+                        tr
+                          th 渋谷小学校
+                          td 渡邉 幸一
+                        tr
+                          th 下福田小学校
+                          td 江川 和美
+                        tr
+                          th 大和中学校
+                          td 初鹿野 敬太
+                        tr
+                          th 光丘中学校
+                          td 時田 恵美子
+                        tr
+                          th 渋谷中学校
+                          td 青木 聡子
+                        tr
+                          th つきみ野中学校
+                          td 加藤 久幸
+                        tr
+                          th 鶴間中学校
+                          td 明吉 葉子
+                        tr
+                          th 引地台中学校
+                          td 成田 佑輔
+                        tr
+                          th 上和田中学校
+                          td 袴田 勝巳
+                        tr
+                          th 南林間中学校
+                          td 尾鳥 八千代
+                        tr
+                          th 下福田中学校
+                          td 松村 敦子
+                        tr
+                          th 大和高校
+                          td 齋藤 俊太
+                        tr
+                          th 大和南高校
+                          td 初鹿野 敬太
+                        tr
+                          th 大和東高校
+                          td 牛腸 郊美
+                        tr
+                          th 大和西高校
+                          td 小田切 誠
+                  .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow(style="flex-basis: 50%")
+                    h3 綾瀬市
+                    table
+                      tbody
+                        tr
+                          th 綾瀬小学校
+                          td 渡辺 哲也
+                        tr
+                          th 落合小学校
+                          td 柏谷 博之
+                        tr
+                          th 北の台小学校
+                          td 長岡 充紀
+                        tr
+                          th 土棚小学校
+                          td 沖本 美和子
+                        tr
+                          th 寺尾小学校
+                          td 米山 克美
+                        tr
+                          th 天台小学校
+                          td 佐川 賢一
+                        tr
+                          th 早園小学校
+                          td 渡邉 幹子
+                        tr
+                          th 綾西小学校
+                          td 野崎 淳一
+                        tr
+                          th 綾南小学校
+                          td 織田 龍二
+                        tr
+                          th 綾北小学校
+                          td 牛腸 効美
+                        tr
+                          th 綾瀬中学校
+                          td 本多 知美
+                        tr
+                          th 春日台中学校
+                          td 宮本 貴博
+                        tr
+                          th 北の台中学校
+                          td 佐藤 一馬
+                        tr
+                          th 城山中学校
+                          td 長岡 充紀
+                        tr
+                          th 綾北中学校
+                          td 末安 亮
+                        tr
+                          th 綾瀬高校
+                          td 渡辺 哲也
+                        tr
+                          th 綾瀬西高校
+                          td 渡辺 哲也
+
+          section.p-section-primary#emergency
+            .p-section-primary__item.u-inner
+              .p-block-editor
+                h2 夜間・休日薬剤師
+                .wp-block-columns.is-layout-flex
+                  .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow(style="flex-basis: 50%")
+                    h3 大和市
+                    ul
+                      li 菊池 めぐみ
+                      li 野村 洋子
+                      li 渡邉 幸一
+                      li 砂生 孝江
+                      li 村田 実希郎
+                      li 明吉 葉子
+                      li 成田 佑輔
+                      li 木村 はるみ
+                      li 内田 誠一
+                      li 時田 恵美子
+                      li 小坂井 信子
+                      li 勝矢 尚美
+                      li 初鹿野 敬太
+                      li 齋藤 俊太
+                      li 福田 雄太朗
+                      li 小山 紀子
+                      li 松下 かおり
+                      li 板垣 まゆ美
+                      li 六倉 哲茂
+                      li 堀 直人
+                      li 佐藤 一馬
+                      li 竹内 由美
+                      li 松村 敦子
+                      li 坂井 奈美子
+                      li 加藤 悦子
+                      li 吉田 茉都夏
+                      li 小田切 智子
+                      li 吉村 智之
+                      li 高橋 祐介
+                      li 江川 和美
+                    p.u-mg-t15 30名
+                  .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow(style="flex-basis: 50%")
+                    h3 綾瀬市
+                    p.u-font-w600 管理薬剤師
+                    ul.u-mg-t15
+                      li 渡辺 哲也
+                    p.u-font-w600 勤務薬剤師
+                    ul.u-mg-t15
+                      li 長岡 充紀
+                      li 米山 克美
+                      li 柏谷 博之
+                      li 森野 徹宏
+                      li 牛腸 さと美
+                      li 渡邉 幹子
+                      li 野崎 淳一
+                      li 沖本 美和子
+                      li 佐川 賢一
+
+    <!--#include virtual="/_includes/footer.html"-->
+    <!--#include virtual="/_includes/footer-include.html"-->
+
+

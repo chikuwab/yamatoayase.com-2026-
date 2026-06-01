@@ -1,0 +1,137 @@
+.p-nav-global {
+  &__box {
+    &:not(:first-child) {
+      margin-top: 24px;
+      @include mq_medium {
+        margin-top: 40px;
+      }
+    }
+  }
+  &__item {
+    margin-left: 16px;
+    @include mq_medium {
+      margin-left: 0;
+    }
+    &:not(:first-child) {
+      margin-top: 4px;
+      @include mq_medium {
+        margin-top: 8px;
+      }
+    }
+    &--title {
+      margin-bottom: 16px;
+      margin-left: 0;
+      font-weight: 600;
+      &:not(:first-child) {
+        margin-top: 0;
+      }
+    }
+    &--member {
+      margin-left: 0;
+      text-align: right;
+    }
+    &--contact {
+      margin-left: 0;
+    }
+  }
+  &--footer {
+    @include mq_medium {
+      display: flex;
+    }
+    .p-nav-global {
+      &__box {
+        &:not(:first-child) {
+          // margin-top: 0;
+          @include mq_medium {
+            margin-left: 24px;
+            margin-top: 0;
+          }
+        }
+      }
+      &__item {
+        @include mq_medium_max {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  &--home {
+    @include mq_medium {
+      display: flex;
+      justify-content: center;
+    }
+    .p-nav-global {
+      &__box {
+        @include mq_medium_max {
+          padding-bottom: 40px;
+        }
+        @include mq_medium {
+          min-width: 21vw;
+          padding-left: unquote("min(40px, 4vw)");
+          padding-right: unquote("min(40px, 4vw)");
+          padding-top: unquote("min(40px, 4vw)");
+          padding-bottom: unquote("min(40px, 4vw)");
+        }
+        @include mq_medium(1280px) {
+          padding-left: unquote("min(80px, 8vw)");
+          padding-right: unquote("min(80px, 8vw)");
+        }
+        &:not(:first-child) {
+          margin-top: 0;
+          @include mq_medium_max {
+            padding-top: 40px;
+            border-top: 1px solid var(--gray-dark);
+          }
+          @include mq_medium {
+            margin-top: 0;
+            border-left: 1px solid var(--gray-dark);
+          }
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 56px;
+            height: 76px;
+            background: url(../img/icon-medicine-01.svg) 0 0 no-repeat;
+            @include mq_medium_max {
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%) translateY(-50%) scale(0.6);
+            }
+            @include mq_medium {
+              top: 50%;
+              left: 0;
+              transform: translateX(-50%) translateY(-50%) scale(0.8);
+            }
+            @include mq_medium(1280px) {
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
+        &:nth-child(3) {
+          &::after {
+            width: 70px;
+            height: 70px;
+            background: url(../img/icon-medicine-02.svg) 0 0 no-repeat;
+          }
+        }
+      }
+      &__item {
+        margin-left: 0;
+        @include mq_medium_max {
+          margin-top: 8px;
+        }
+        &--title {
+          @include mq_medium {
+            margin-bottom: 32px;
+            @include fz_vw(22);
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

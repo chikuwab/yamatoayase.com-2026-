@@ -1,0 +1,18 @@
+.p-block-primary {
+  &__header {
+    @include pdb_vw(80);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 1px;
+      background: var(--black);
+    }
+  }
+  &__contents {
+    @include mgt_vw(90);
+  }
+}

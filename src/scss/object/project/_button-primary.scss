@@ -1,0 +1,39 @@
+.p-button-primary {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1;
+  position: relative;
+  padding-left: 50px;
+  transition: 0.2s;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include aicon-left-open-big;
+    color: var(--white);
+    transition: 0.2s;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    background: var(--green);
+    border-radius: 100%;
+    transition: 0.2s;
+  }
+  &:hover {
+    color: var(--green-dark);
+    &::after {
+      transform: translateY(-50%) scale(1.2);
+    }
+    &::before {
+      transform: translateY(-50%) scale(1.2);
+    }
+  }
+}

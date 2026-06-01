@@ -1,0 +1,8 @@
+.p-article-primary {
+  &__section {
+    margin-top: var(--margin-large);
+    @include mq_medium {
+      margin-top: 120px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"path-autocomplete.pathMappings": {
+			"/":"${folder}/dist/"
+		},
+		"html.format.wrapLineLength": 0,
+		"editor.wordWrap": "on"
+	}
+}

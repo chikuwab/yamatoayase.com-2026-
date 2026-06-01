@@ -1,0 +1,22 @@
+header.l-header.js-header
+  .l-header__inne
+    .l-header__logo
+      a.p-link-logo(href="/")
+        img.p-link-logo__img(src="/assets/img/logo.svg", alt="")
+    .l-header__btn
+      .l-header__btn__inner
+        .c-hamburger.js-button-hamburger
+          .c-hamburger__inner
+            .c-hamburger__lines
+              i.c-hamburger__line
+              i.c-hamburger__line
+            .c-hamburger__label メニュー
+
+.l-nav.l-nav--slide
+  .l-nav__wrap
+    .l-nav__inner
+      .l-nav__nav
+        nav.p-nav-global
+          include ./_nav-global.pug
+        nav.p-nav-sub.u-mg-t40
+          include ./_nav-sub.pug

@@ -1,0 +1,44 @@
+.l-footer {
+  background-color: var(--white);
+  border-top: 1px solid var(--gray-dark);
+  padding: var(--margin-section-medium) 0 40px;
+  position: relative;
+  z-index: 2;
+  &__inner {
+  }
+  &__box {
+    @include mq_medium {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+  &__logo {
+    text-align: center;
+    @include mq_medium {
+      flex-basis: 35%;
+      padding-bottom: 20px;
+    }
+    img {
+      @include mq_medium_max {
+        width: 60%;
+        max-width: 200px;
+      }
+    }
+  }
+  &__nav {
+    @include mgt_vw(64);
+    @include mq_medium {
+      margin-top: 0;
+      flex-basis: 65%;
+    }
+  }
+  &__copy {
+    text-align: right;
+    @include mgt_vw(64);
+    @include font_size(14);
+    @include mq_medium {
+      flex-basis: 100%;
+    }
+  }
+}

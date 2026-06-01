@@ -1,0 +1,160 @@
+.u-text {
+  &-note {
+  }
+  &-copy {
+    font-weight: 600;
+    @include font_size(18);
+    @include mq_medium {
+      @include font_size(30);
+    }
+  }
+  &-title-modal {
+    font-weight: 600;
+    @include font_size(20);
+    @include mq_medium {
+      @include font_size(40);
+    }
+  }
+  &-40 {
+    @include mq_medium {
+      @include font_size(40);
+    }
+    @include mq_medium_max {
+      @include font_size(38);
+    }
+  }
+  &-38 {
+    @include mq_medium {
+      @include font_size(38);
+    }
+    @include mq_medium_max {
+      @include font_size(36);
+    }
+  }
+  &-36 {
+    @include mq_medium {
+      @include font_size(36);
+    }
+    @include mq_medium_max {
+      @include font_size(34);
+    }
+  }
+  &-34 {
+    @include mq_medium {
+      @include font_size(34);
+    }
+    @include mq_medium_max {
+      @include font_size(32);
+    }
+  }
+  &-22 {
+    @include mq_medium {
+      @include font_size(32);
+    }
+    @include mq_medium_max {
+      @include font_size(30);
+    }
+  }
+  &-30 {
+    @include mq_medium {
+      @include font_size(30);
+    }
+    @include mq_medium_max {
+      @include font_size(28);
+    }
+  }
+  &-28 {
+    @include mq_medium {
+      @include font_size(28);
+    }
+    @include mq_medium_max {
+      @include font_size(26);
+    }
+  }
+  &-26 {
+    @include mq_medium {
+      @include font_size(26);
+    }
+    @include mq_medium_max {
+      @include font_size(24);
+    }
+  }
+  &-24 {
+    @include mq_medium {
+      @include font_size(24);
+    }
+    @include mq_medium_max {
+      @include font_size(22);
+    }
+  }
+  &-22 {
+    @include mq_medium {
+      @include font_size(22);
+    }
+    @include mq_medium_max {
+      @include font_size(20);
+    }
+  }
+  &-20 {
+    @include mq_medium {
+      @include font_size(20);
+    }
+    @include mq_medium_max {
+      @include font_size(18);
+    }
+  }
+  &-18 {
+    @include mq_medium {
+      @include font_size(18);
+    }
+    @include mq_medium_max {
+      @include font_size(17);
+    }
+  }
+
+  // common
+  &-center {
+    text-align: center !important;
+  }
+  &-jsf {
+    text-align: justify !important;
+  }
+  &-left {
+    text-align: left !important;
+  }
+  &-right {
+    text-align: right !important;
+  }
+  &-pc {
+    @include mq_medium {
+      &-center {
+        text-align: center !important;
+      }
+      &-jsf {
+        text-align: justify !important;
+      }
+      &-left {
+        text-align: left !important;
+      }
+      &-right {
+        text-align: right !important;
+      }
+    }
+  }
+  &-sp {
+    @include mq_medium_max {
+      &-center {
+        text-align: center !important;
+      }
+      &-jsf {
+        text-align: justify !important;
+      }
+      &-left {
+        text-align: left !important;
+      }
+      &-right {
+        text-align: right !important;
+      }
+    }
+  }
+}

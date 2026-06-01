@@ -1,0 +1,7 @@
+.p-title-secondary {
+  font-weight: 500;
+  @include fz_vw_sp(28);
+  @include mq_medium {
+    @include fz_vw(34);
+  }
+}

@@ -1,0 +1,42 @@
+.p-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  &.is-show {
+    animation: fadein 0.2s linear forwards;
+  }
+  &__inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__box {
+    max-height: calc(100dvh - 30px);
+    overflow: auto;
+    padding: 0 20px;
+  }
+  &__header {
+  }
+  &__button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    @include mq_medium {
+    }
+  }
+  &__contents {
+    // margin-top: var(--margin-xxs);
+    &__item {
+      @include mq_medium {
+      }
+    }
+  }
+}

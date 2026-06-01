@@ -1,0 +1,20 @@
+.p-nav-local {
+  &__item {
+    &:not(:first-child) {
+      @include mgt_vw(16);
+    }
+    &[open] .label {
+      font-weight: 700;
+    }
+  }
+  &__link {
+    color: var(--green-dark);
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  &__notes {
+    @include mgt_vw(24);
+    margin-left: 24px;
+  }
+}

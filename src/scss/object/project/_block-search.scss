@@ -1,0 +1,119 @@
+.p-block-search {
+  &__gmap {
+    width: 100%;
+    height: 60dvh;
+    min-height: 300px;
+  }
+  &__buttons {
+    @include mgt_vw(40);
+  }
+  &__list {
+    @include mgt_vw(64);
+    &__area {
+      @include mgt_vw(64);
+      font-weight: 600;
+      font-size: 20px;
+      text-align: center;
+    }
+    &__name {
+      font-weight: 600;
+      font-size: 18px;
+    }
+    &__item {
+      margin-top: 30px;
+      &:not(:first-child) {
+        border-top: 1px solid #000;
+        padding-top: 25px;
+      }
+    }
+    &__cont {
+      @include mgt_vw(8);
+      @include mq_medium {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    &__title {
+      margin-top: 10px;
+      font-weight: 600;
+      @include mq_medium {
+        margin-top: 10px;
+        width: 100px;
+      }
+    }
+    &__data {
+      margin-top: 5px;
+      box-sizing: border-box;
+      position: relative;
+      &--adr {
+        padding-right: 40px;
+      }
+      @include mq_medium {
+        margin-top: 10px;
+        width: calc(100% - 100px);
+      }
+    }
+    &__label {
+      display: inline-block;
+      background-color: #92c58b;
+      font-size: 14px;
+      padding: 4px 8px;
+      line-height: 1;
+      color: #fff;
+      margin-left: 10px;
+      font-weight: 600;
+      transform: translateY(-1px);
+    }
+    &__map-link {
+      position: relative;
+      display: inline-block;
+      padding-right: 30px;
+      text-decoration: none !important;
+      color: #000 !important;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        background: url(../img/ico-gmap.svg) center no-repeat/cover;
+      }
+
+      // display: block;
+      // position: absolute;
+      // top: 50%;
+      // transform: translateY(-50%);
+      // right: 0;
+    }
+
+    &__map-icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  &__notes {
+    @include mgt_vw(64);
+    padding: calc(var(--margin-side) * 2) var(--margin-side);
+    border: 1px solid var(--gray-dark);
+    @include mq_medium {
+      padding: 60px;
+    }
+    &-item {
+      &:not(:first-child) {
+        @include mgt_vw(40);
+      }
+    }
+    &-label {
+      font-weight: 600;
+      @include fz_vw_sp(20);
+      @include mq_medium {
+        @include fz_vw(20);
+      }
+    }
+    &-note {
+      @include mgt_vw(24);
+    }
+  }
+}

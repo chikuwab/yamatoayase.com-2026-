@@ -1,0 +1,62 @@
+.c-loader {
+  &-1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid 4px;
+    border-color: var(--black) var(--beige) var(--beige);
+    position: relative;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    @include mq_medium {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &-2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 4px;
+    border-color: var(--black) var(--beige) var(--beige);
+    position: relative;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  &-3 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 4px;
+    border-color: var(--black) var(--beige);
+    position: relative;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  &-4 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: dashed 3px;
+    border-color: var(--beige) var(--black) var(--black);
+    position: relative;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

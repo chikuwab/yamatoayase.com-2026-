@@ -1,0 +1,21 @@
+.p-link-sub {
+  border: 1px solid var(--black);
+  padding: 11px 18px 12px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1;
+  border-radius: 3px;
+  transition: 0.2s;
+  &:hover {
+    background-color: var(--green);
+    color: var(--white);
+    border-color: var(--green);
+    ::after {
+      color: var(--white);
+    }
+  }
+  @include mq_medium_max {
+    display: block;
+    text-align: center;
+  }
+}

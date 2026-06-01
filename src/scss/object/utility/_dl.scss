@@ -1,0 +1,10 @@
+.u-dl {
+  &-primay {
+    dt {
+      font-weight: 600;
+      &:not(:first-child) {
+        @include mgt_vw(8);
+      }
+    }
+  }
+}

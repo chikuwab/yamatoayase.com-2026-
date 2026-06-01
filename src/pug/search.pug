@@ -1,0 +1,115 @@
+include _components/_config.pug
+
+- var PAGE_TITLE = "";
+
+doctype
+html(lang="ja")
+  head
+    include _components/_head.pug
+  body
+    <!--#include virtual="/_includes/header.html"-->
+      main.l-main
+        .l-main__header
+          header.p-header-primary.u-inner
+            .p-header-primary__sub 市民の皆様へ
+            .p-header-primary__main 薬局リスト
+        .l-main__contents.u-pd-t20
+          section.p-section-primary#contents
+            .p-section-primary__item.u-inner
+              //- nav.p-nav-local
+              //-   details(name="map_type").p-nav-local__item
+              //-     summary.p-nav-local__link.p-nav-local__link--button.js-serch-select(data-select="holiday") 
+              //-       .label 休日夜間
+              //-     .p-nav-local__notes
+              //-       p 休日夜間に対応できる薬局
+              //-   details(name="map_type").p-nav-local__item
+              //-     summary.p-nav-local__link.p-nav-local__link--button.js-serch-select(data-select="saigai") 
+              //-       .label 災害・進行感染症
+              //-     .p-nav-local__notes
+              //-       p 災害や進行感染症発生時に対応できる薬局
+              //-       p.u-mg-t-xxs このリストに掲載している薬局は以下の機能を有する
+              //-       ul.u-list.u-mg-t-xxs
+              //-         li 改正感染症法に基づく第二種協定指定医療機関として神奈川県の指定を受けている
+              //-         li オンライン服薬指導の対応が可能
+              //-         li 要指導医薬品・一般用医薬品の取扱
+              //-         li 体外診断用医薬品 検査キットの取扱
+              //-   details(name="map_type").p-nav-local__item
+              //-     summary.p-nav-local__link.p-nav-local__link--button.js-serch-select(data-select="zaitaku1") 
+              //-       .label 開局時間外在宅業務
+              //-     .p-nav-local__notes
+              //-       p 急変時等の開局時間外における在宅業務に対応できる薬局
+              //-       ul.u-list.u-mg-t-xxs
+              //-         li 休日、夜間における在宅業務の対応が可能
+              //-         li 医療用麻薬の取扱
+              //-         li 医療材料、衛生材料の取扱
+              //-   details(name="map_type").p-nav-local__item
+              //-     summary.p-nav-local__link.p-nav-local__link--button.js-serch-select(data-select="zaitaku2") 
+              //-       .label ターミナルケア・小児在宅患者
+              //-     .p-nav-local__notes
+              //-       p がん末期などターミナルケア在宅患者、または小児在宅患者などに対応できる薬局
+              //-       ul.u-list.u-mg-t-xxs
+              //-         li 休日、夜間における在宅業務の対応が可能
+              //-         li 医療用麻薬の取扱
+              //-         li 医療材料、衛生材料の取扱
+              //-         li 医療用麻薬の規定品目数以上の備蓄および取扱（注射１品目を含む６品目以上）
+              //-         li 無菌製剤対応（安全キャビネット・クリーンベンチ等）
+              //-         li 小児在宅患者に対する体制
+              //-         li 高度管理医療機器販売業の許可
+              .p-block-search
+                .p-block-search__gmap#gmap
+                .p-block-search__buttons
+                  nav.p-nav-search
+                    .p-nav-search__item.js-serch-select(data-select="holiday") ［ 休日夜間 ］
+                    .p-nav-search__item.js-serch-select(data-select="saigai") ［ 災害・進行感染症 ］
+                    .p-nav-search__item.js-serch-select(data-select="zaitaku1") ［ 時間外在宅 ］
+                    .p-nav-search__item.js-serch-select(data-select="zaitaku2") ［ ターミナルケア・小児在宅 ］
+                  p.u-text-center.u-mg-t-medium 条件を選択して
+                    span.u-disp-inb 検索・一覧表示できます。
+                    span.u-disp-inb 詳しくは
+                    a(href="#note") こちら
+                    | 。
+                .p-block-search__list.js-map-list#map-list
+                .p-block-search__notes#note
+                  .p-block-search__notes-item 
+                    .p-block-search__notes-label 休日夜間
+                    .p-block-search__notes-note
+                      p 休日夜間に対応できる薬局
+                  .p-block-search__notes-item 
+                    .p-block-search__notes-label 災害・進行感染症
+                    .p-block-search__notes-note
+                      p 災害や進行感染症発生時に対応できる薬局
+                      p.u-mg-t-xxs このリストに掲載している薬局は以下の機能を有する
+                      ul.u-list.u-mg-t-xxs
+                        li 改正感染症法に基づく第二種協定指定医療機関として神奈川県の指定を受けている
+                        li オンライン服薬指導の対応が可能
+                        li 要指導医薬品・一般用医薬品の取扱
+                        li 体外診断用医薬品 検査キットの取扱
+                  .p-block-search__notes-item 
+                    .p-block-search__notes-label 時間外在宅
+                    .p-block-search__notes-note
+                      p 急変時等の開局時間外における在宅業務に対応できる薬局
+                      ul.u-list.u-mg-t-xxs
+                        li 休日、夜間における在宅業務の対応が可能
+                        li 医療用麻薬の取扱
+                        li 医療材料、衛生材料の取扱
+                  .p-block-search__notes-item 
+                    .p-block-search__notes-label ターミナルケア・小児在宅
+                    .p-block-search__notes-note
+                      p がん末期などターミナルケア在宅患者、または小児在宅患者などに対応できる薬局
+                      ul.u-list.u-mg-t-xxs
+                        li 休日、夜間における在宅業務の対応が可能
+                        li 医療用麻薬の取扱
+                        li 医療材料、衛生材料の取扱
+                        li 医療用麻薬の規定品目数以上の備蓄および取扱（注射１品目を含む６品目以上）
+                        li 無菌製剤対応（安全キャビネット・クリーンベンチ等）
+                        li 小児在宅患者に対する体制
+                        li 高度管理医療機器販売業の許可
+
+
+    <!--#include virtual="/_includes/footer.html"-->
+    <!--#include virtual="/_includes/footer-include.html"-->
+    script(src="https://code.jquery.com/jquery-3.7.1.min.js", integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=", crossorigin="anonymous")
+    script(src="/assets/js/map.js?r=1")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKzxOCuVhlbHSX61Pn4ASWLv2KSPiyaZQ&callback=initMap")
+    .js-locations
+

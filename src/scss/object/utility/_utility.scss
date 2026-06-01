@@ -1,0 +1,42 @@
+.u-editor {
+  @include editor;
+}
+.u-white-space-nowrap {
+  white-space: nowrap;
+}
+.u-must {
+  color: var(--red);
+}
+.u-red {
+  color: var(--red);
+}
+.u-ofh {
+  overflow: hidden;
+}
+.u-w100p {
+  width: 100%;
+}
+.u-ba {
+  word-break: break-all;
+}
+.u-fit {
+  margin-left: calc(-1 * var(--margin-side));
+  margin-right: calc(-1 * var(--margin-side));
+}
+.u-accordion-trigger {
+  cursor: pointer;
+}
+.u-accordion-target {
+  height: 0;
+  overflow: hidden;
+}
+@include mq_medium {
+  .is-sp {
+    display: none;
+  }
+}
+@include mq_medium_max {
+  .is-pc {
+    display: none;
+  }
+}

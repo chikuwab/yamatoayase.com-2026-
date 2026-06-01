@@ -1,0 +1,22 @@
+.acf-postbox .postbox-header {
+	display: none;
+}
+.mce-listbox {
+	display: none !important;
+}
+/*
+追加リンク削除
+.components-panel .components-panel__body:nth-child(4) .editor-post-taxonomies__hierarchical-terms-add {
+	*/
+.components-panel .components-panel__body .editor-post-taxonomies__hierarchical-terms-add {
+	display: none;
+}
+/* .acf-field .mce-top-part {
+	display: none;
+}
+
+.acf-field .mce-panel {
+	visibility: visible !important;
+} */
+
+/* 画像スタイル */
