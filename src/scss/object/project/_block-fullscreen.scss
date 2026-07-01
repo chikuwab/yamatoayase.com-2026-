@@ -15,6 +15,11 @@
         visibility: visible;
       }
     }
+    &--sp-absolute {
+      @include mq_medium_max {
+        position: absolute;
+      }
+    }
   }
   &__cont {
     position: absolute;

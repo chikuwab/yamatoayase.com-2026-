@@ -6,7 +6,7 @@ $query = new WP_Query(array(
 ));
 ?>
 <div class="p-block-fullscreen">
-  <div class="p-block-fullscreen__box">
+  <div class="p-block-fullscreen__box p-block-fullscreen__box--sp-absolute">
     <div class="p-block-fullscreen__bg"><img class="p-block-fullscreen__img" src="/assets/img/home-visual@2x.webp" srcset="/assets/img/home-visual.webp 1x, /assets/img/home-visual@2x.webp 2x, " alt=""></div>
     <div class="p-block-fullscreen__cont">
       <div class="p-block-fullscreen__logo"><img src="/assets/img/logo-mark.svg" alt=""></div>

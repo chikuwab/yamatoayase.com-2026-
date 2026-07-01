@@ -34,7 +34,8 @@ Template Name: 薬剤師会紹介
       <div class="p-section-primary__item u-inner">
         <div class="p-block-editor">
           <h2>会長挨拶</h2>
-          <p>大和綾瀬薬剤師会のホームページにアクセスいただき、ありがとうございます。</p>
+          <p>準備中です。</p>
+          <!-- <p>大和綾瀬薬剤師会のホームページにアクセスいただき、ありがとうございます。</p>
           <p>大和綾瀬薬剤師会は、これまで公益社団法人として、薬剤師の倫理および学術的水準の向上を図るとともに、地域住民の公衆衛生の増進と地域医療の発展に寄与することを使命として活動してまいりました。</p>
           <p>そして令和8年4月より、当会は一般社団法人 大和綾瀬薬剤師会として新たな歩みを開始いたします。</p>
           <p>法人形態は変わりますが、地域の皆様の健康と安全を支えるという使命に変わりはありません。むしろ、急速な少子高齢化や医療環境の変化が進むなかで、薬剤師が地域社会において果たすべき役割はこれまで以上に大きくなっています。</p>
@@ -42,7 +43,7 @@ Template Name: 薬剤師会紹介
           <p>一般社団法人への移行は、地域の課題により柔軟かつ主体的に取り組むための新たな出発点です。私たちは職能団体としての責任と誇りを胸に、市民の皆様に信頼される活動を継続し、地域医療と公衆衛生の向上に努めてまいります。</p>
           <p>今後とも、大和綾瀬薬剤師会の活動にご理解とご協力を賜りますよう、心よりお願い申し上げます。</p>
           <p>令和8年4月</p>
-          <p class="u-font-w600 u-text-sp-left u-text-pc-right">一般社団法人 大和綾瀬薬剤師会 <span class="u-disp-inb">会長 加藤 久幸</span></p>
+          <p class="u-font-w600 u-text-sp-left u-text-pc-right">一般社団法人 大和綾瀬薬剤師会 <span class="u-disp-inb">会長 加藤 久幸</span></p> -->
         </div>
       </div>
     </section>
@@ -50,65 +51,65 @@ Template Name: 薬剤師会紹介
       <div class="p-section-primary__item u-inner">
         <div class="p-block-editor">
           <h2>役員名簿</h2>
-          <table>
-            <tbody>
-              <tr>
-                <th>役職</th>
-                <th>氏名</th>
-                <th>施設名</th>
-              </tr>
-              <tr>
-                <td>会長</td>
-                <td>加藤 久幸</td>
-                <td>雙葉薬局</td>
-              </tr>
-              <tr>
-                <td>副会長</td>
-                <td>渡邉 幸一</td>
-                <td>桜ヶ丘東口駅前薬局</td>
-              </tr>
-              <tr>
-                <td>副会長</td>
-                <td>渡辺 哲也</td>
-                <td>綾瀬厚生病院</td>
-              </tr>
-              <tr>
-                <td class="u-white-space-nowrap">副会長</td>
-                <td class="u-white-space-nowrap">初鹿野 敬太</td>
-                <td>ヤマグチ薬局西鶴間店</td>
-              </tr>
-              <tr>
-                <td>副会長</td>
-                <td>大島 久明</td>
-                <td>桜ヶ丘東口駅前薬局</td>
-              </tr>
-              <tr>
-                <td>理事</td>
-                <td>村田 実希郎</td>
-                <td>横浜薬科大学</td>
-              </tr>
-              <tr>
-                <td>理事</td>
-                <td>佐藤 一馬</td>
-                <td>みらい薬局 大和店</td>
-              </tr>
-              <tr>
-                <td>理事</td>
-                <td>吉村 智之</td>
-                <td>ひらもと鶴間薬局</td>
-              </tr>
-              <tr>
-                <td>理事</td>
-                <td>本田 紋</td>
-                <td>雙葉薬局</td>
-              </tr>
-              <tr>
-                <td>監事</td>
-                <td>大塚 孝明</td>
-                <td>南林間薬局</td>
-              </tr>
-            </tbody>
-          </table>
+            <table>
+              <tbody>
+                <tr>
+                  <th>役職</th>
+                  <th>氏名</th>
+                  <th>施設名</th>
+                </tr>
+                <tr>
+                  <td>会長</td>
+                  <td>渡邉　幸一</td>
+                  <td>桜ヶ丘東口駅前薬局</td>
+                </tr>
+                <tr>
+                  <td>副会長</td>
+                  <td>渡辺　哲也</td>
+                  <td>綾瀬厚生病院</td>
+                </tr>
+                <tr>
+                  <td class="u-white-space-nowrap">副会長</td>
+                  <td class="u-white-space-nowrap">初鹿野　敬太</td>
+                  <td>ヤマグチ薬局西鶴間店</td>
+                </tr>
+                <tr>
+                  <td>副会長</td>
+                  <td>佐藤　一馬</td>
+                  <td>みらい薬局大和店</td>
+                </tr>
+                <tr>
+                  <td>副会長</td>
+                  <td>吉村　智之</td>
+                  <td>ひらもと鶴間薬局</td>
+                </tr>
+                <tr>
+                  <td>理事</td>
+                  <td>村田　実希郎</td>
+                  <td>横浜薬科大学</td>
+                </tr>
+                <tr>
+                  <td>理事</td>
+                  <td>本田　紋</td>
+                  <td>雙葉薬局</td>
+                </tr>
+                <tr>
+                  <td>理事</td>
+                  <td>齋藤　俊太</td>
+                  <td>健ナビ薬樹薬局南林間</td>
+                </tr>
+                <tr>
+                  <td>理事</td>
+                  <td>渡部　雄一</td>
+                  <td>綾瀬厚生病院</td>
+                </tr>
+                <tr>
+                  <td>監事</td>
+                  <td>大島　久明</td>
+                  <td>テラスファーマシー</td>
+                </tr>
+              </tbody>
+            </table>
         </div>
       </div>
     </section>
@@ -127,7 +128,7 @@ Template Name: 薬剤師会紹介
             <li><a class="p-link-blank" href="https://www.city.yamato.lg.jp/" target="_blank">大和市ホームページ</a></li>
             <li><a class="p-link-blank" href="https://www.city.ayase.kanagawa.jp/" target="_blank">綾瀬市ホームページ</a></li>
             <li><a class="p-link-blank" href="https://www.pref.kanagawa.jp/docs/e7a/index.html" target="_blank">厚木保健福祉事務所大和センター</a></li>
-            <li><a class="p-link-blank" href="http://www.kanagawa.med.or.jp/yamato/" target="_blank">大和市医師会</a></li>
+            <li><a class="p-link-blank" href="http://yamato-kanagawa-med.jp/" target="_blank">大和市医師会</a></li>
             <li><a class="p-link-blank" href="https://shimin.yamatoshikaishikai.or.jp/" target="_blank">大和綾瀬歯科医師会</a></li>
             <li><a class="p-link-blank" href="https://www.jpec.or.jp/" target="_blank">日本薬剤師研修センター</a></li>
             <li><a class="p-link-blank" href="https://www.kantou-chousei.org/" target="_blank">一般社団法人 薬学教育協議会 関東地区調整機構</a></li>
