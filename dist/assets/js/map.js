@@ -20,6 +20,7 @@ function setListView(search){
     }
     grouped[item.area].push(item);
   });
+  console.log(grouped);
 
   const output = document.getElementById('map-list');
 
@@ -212,7 +213,7 @@ function setGMap(val, zoom_num, latlng) {
     if (val === "saigai" && map_json[i].saigai != 1) continue;
     if (val === "holiday" && map_json[i].holiday != 1) continue;
     // console.log(map_json[i].name);
-    location = map_json[i].location.split(' ');
+    location = map_json[i].location.split(/[,\s]+/);
     title[cnt] = map_json[i].name;
     lat[cnt] = location[0];
     lng[cnt] = location[1];
@@ -332,11 +333,14 @@ function createMarker(name,latlng,icon,gmap){
 
 
 function initMap() {
-  // console.log("initMap");
-  
+  if (!json_file) {
+    console.log("error! json file : "+json_file);
+    return;
+  }
+
   $.ajax({
     type: "GET",
-    url: "/assets/data/store.json?r=1",
+    url: json_file,
     async: false,
     dataType:'json',
     success: function(data){

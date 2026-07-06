@@ -38,7 +38,10 @@
 <script src="/assets/js/main.bundle.js"></script>
 <?php if (is_page('search')): ?>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="/assets/js/map.js"></script>
+  <script>
+    json_file = "/assets/data/store.json?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'] . '/assets/data/store.json'); ?>";
+  </script>
+  <script src="/assets/js/map.js?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'] . '/assets/js/map.js'); ?>"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKzxOCuVhlbHSX61Pn4ASWLv2KSPiyaZQ&amp;callback=initMap"></script>
   <div class="js-locations"></div>
 <?php endif; ?>

@@ -47,7 +47,7 @@ module.exports = {
 
 	entry: {
 		main: './src/js/main.js',
-		map: './src/js/map.js',
+		// map: './src/js/map.js',
 		// instagram: './src/js/instagram.js',
     // youtube: './src/js/youtube.js',
     // 'open-house': './src/js/open-house/open-house.js',
