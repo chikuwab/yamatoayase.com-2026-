@@ -34,7 +34,7 @@
 <body>
   <header class="l-header js-header">
     <div class="l-header__inne">
-      <div class="l-header__logo"><a class="p-link-logo" href="<?php echo esc_url(home_url('/')) ?>"><img class="p-link-logo__img" src="/assets/img/logo.svg" alt="<?php bloginfo('name'); ?>" /></a></div>
+      <div class="l-header__logo"><a class="p-link-logo" href="<?php echo esc_url(home_url('/')) ?>"><img class="p-link-logo__img" src="/assets/img/logo.svg?r=20260709" alt="<?php bloginfo('name'); ?>" /></a></div>
       <div class="l-header__btn">
         <div class="l-header__btn__inner">
           <div class="c-hamburger js-button-hamburger">

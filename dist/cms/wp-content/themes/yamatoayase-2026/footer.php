@@ -1,7 +1,7 @@
 <footer class="l-footer js-footer">
   <div class="l-footer__inner u-inner-full">
     <div class="l-footer__box">
-      <div class="l-footer__logo"><a href="<?php echo esc_url(home_url('/')) ?>"><img src="/assets/img/logo-vertical.svg" alt="大和綾瀬薬剤師会" /></a></div>
+      <div class="l-footer__logo"><a href="<?php echo esc_url(home_url('/')) ?>"><img src="/assets/img/logo-vertical.svg?r=20260709" alt="大和綾瀬薬剤師会" /></a></div>
       <div class="l-footer__nav">
         <nav class="p-nav-global p-nav-global--footer">
           <div class="p-nav-global__box">
