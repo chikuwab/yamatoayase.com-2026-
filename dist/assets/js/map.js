@@ -20,7 +20,7 @@ function setListView(search){
     }
     grouped[item.area].push(item);
   });
-  console.log(grouped);
+  // console.log(grouped);
 
   const output = document.getElementById('map-list');
 
@@ -46,6 +46,12 @@ function setListView(search){
         return true;
       }
       if(search === "zaitaku2" && shop.zaitaku2 != 1){
+        return true;
+      }
+      if(search === "hinin_tyouzai" && shop.hinin_tyouzai != 1){
+        return true;
+      }
+      if(search === "hinin_hanbai" && shop.hinin_hanbai != 1){
         return true;
       }
 
@@ -212,6 +218,8 @@ function setGMap(val, zoom_num, latlng) {
     if (val === "zaitaku2" && map_json[i].zaitaku2 != 1) continue;
     if (val === "saigai" && map_json[i].saigai != 1) continue;
     if (val === "holiday" && map_json[i].holiday != 1) continue;
+    if (val === "hinin_tyouzai" && map_json[i].hinin_tyouzai != 1) continue;
+    if (val === "hinin_hanbai" && map_json[i].hinin_hanbai != 1) continue;
     // console.log(map_json[i].name);
     location = map_json[i].location.split(/[,\s]+/);
     title[cnt] = map_json[i].name;

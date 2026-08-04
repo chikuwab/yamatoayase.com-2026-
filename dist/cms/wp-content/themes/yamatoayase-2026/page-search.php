@@ -22,6 +22,8 @@ Template Name: 薬局リスト
               <div class="p-nav-search__item js-serch-select" data-select="saigai">［ 災害・進行感染症 ］</div>
               <div class="p-nav-search__item js-serch-select" data-select="zaitaku1">［ 時間外在宅 ］</div>
               <div class="p-nav-search__item js-serch-select" data-select="zaitaku2">［ ターミナルケア・小児在宅 ］</div>
+              <div class="p-nav-search__item js-serch-select" data-select="hinin_tyouzai">［ 緊急避妊薬の調剤 ］</div>
+              <div class="p-nav-search__item js-serch-select" data-select="hinin_hanbai">［ 緊急避妊薬の販売 ］</div>
             </nav>
             <p class="u-text-center u-mg-t-medium">条件を選択して<span class="u-disp-inb">検索・一覧表示できます。</span><span class="u-disp-inb">詳しくは</span><a href="#note">こちら</a>。</p>
           </div>
@@ -70,6 +72,18 @@ Template Name: 薬局リスト
                   <li>小児在宅患者に対する体制</li>
                   <li>高度管理医療機器販売業の許可</li>
                 </ul>
+              </div>
+            </div>
+            <div class="p-block-search__notes-item">
+              <div class="p-block-search__notes-label">緊急避妊薬の調剤対応</div>
+              <div class="p-block-search__notes-note">
+                <p>緊急避妊薬の調剤ができる薬局</p>
+              </div>
+            </div>
+            <div class="p-block-search__notes-item">
+              <div class="p-block-search__notes-label">緊急避妊薬の販売対応</div>
+              <div class="p-block-search__notes-note">
+                <p>緊急避妊薬の販売ができる薬局</p>
               </div>
             </div>
           </div>
