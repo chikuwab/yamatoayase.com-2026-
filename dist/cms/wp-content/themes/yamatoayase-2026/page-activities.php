@@ -285,7 +285,7 @@ Template Name: 活動内容
                   </tr>
                   <tr>
                     <th>北の台小学校</th>
-                    <td>長岡 充紀</td>
+                    <td>佐藤 一馬</td>
                   </tr>
                   <tr>
                     <th>土棚小学校</th>
@@ -325,7 +325,7 @@ Template Name: 活動内容
                   </tr>
                   <tr>
                     <th>北の台中学校</th>
-                    <td>佐藤 一馬</td>
+                    <td>森野 徹宏</td>
                   </tr>
                   <tr>
                     <th>城山中学校</th>
