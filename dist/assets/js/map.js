@@ -231,7 +231,7 @@ function setGMap(val, zoom_num, latlng) {
     // cov[cnt] = map_json[i].cov;
     cnt++;
   }
-  // console.log("setGMap cnt:"+cnt);
+  console.log("setGMap cnt:"+cnt);
   // console.log("setGMap title:"+title);
   initialize(cnt,title,lat,lng,url_id,zoom_num,latlng,val);
 }
